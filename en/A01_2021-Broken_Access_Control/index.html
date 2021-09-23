@@ -12,7 +12,7 @@
       
       
       <link rel="icon" href="../../assets/OWASP-logo.svg">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8b42a75e.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -98,7 +98,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" class="md-header__button md-logo" aria-label="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" data-md-component="logo">
       
@@ -164,14 +166,32 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../it/" hreflang="it" class="md-select__link">
+                    Italiano
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../ja/" hreflang="ja" class="md-select__link">
+                    Japanese
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../fr/" hreflang="fr" class="md-select__link">
                     Français
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../it/" hreflang="it" class="md-select__link">
-                    Italiano
+                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -236,11 +256,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -386,10 +409,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
-      <label class="md-nav__link" for="__nav_7">
-        Top 10 List
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Top 10 List
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Top 10 List" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -398,6 +425,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
     
@@ -490,8 +518,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -502,8 +532,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -514,8 +546,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -526,8 +560,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -538,8 +574,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -550,8 +588,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -562,8 +602,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -574,8 +616,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -586,8 +630,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -598,6 +644,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -719,10 +766,10 @@
 <th align="center">CWEs Mapped</th>
 <th align="center">Max Incidence Rate</th>
 <th align="center">Avg Incidence Rate</th>
-<th align="center">Max Coverage</th>
-<th align="center">Avg Coverage</th>
 <th align="center">Avg Weighted Exploit</th>
 <th align="center">Avg Weighted Impact</th>
+<th align="center">Max Coverage</th>
+<th align="center">Avg Coverage</th>
 <th align="center">Total Occurrences</th>
 <th align="center">Total CVEs</th>
 </tr>
@@ -732,10 +779,10 @@
 <td align="center">34</td>
 <td align="center">55.97%</td>
 <td align="center">3.81%</td>
-<td align="center">94.55%</td>
-<td align="center">47.72%</td>
 <td align="center">6.92</td>
 <td align="center">5.93</td>
+<td align="center">94.55%</td>
+<td align="center">47.72%</td>
 <td align="center">318,487</td>
 <td align="center">19,013</td>
 </tr>
@@ -743,8 +790,7 @@
 </table>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⚓︎</a></h2>
 <p>Moving up from the fifth position, 94% of applications were tested for
-some form of broken access control. Notable CWEs included are <em>CWE-200:
-Exposure of Sensitive Information to an Unauthorized Actor</em>, <em>CWE-201:
+some form of broken access control with the average incidence rate of 3.81%, and has the most occurrences in the contributed dataset with over 318k. Notable CWEs included are <em>CWE-200: Exposure of Sensitive Information to an Unauthorized Actor</em>, <em>CWE-201:
 Exposure of Sensitive Information Through Sent Data</em>, and <em>CWE-352:
 Cross-Site Request Forgery</em>.</p>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h2>
@@ -760,8 +806,8 @@ control vulnerabilities include:</p>
     attack tool.</p>
 </li>
 <li>
-<p>Allowing the primary key to be changed to another user's record,
-    permitting viewing or editing someone else's account.</p>
+<p>Permitting viewing or editing someone else's account, simply providing
+    it's unique identifier.</p>
 </li>
 <li>
 <p>Elevation of privilege. Acting as a user without being logged in or
@@ -773,7 +819,8 @@ control vulnerabilities include:</p>
     manipulated to elevate privileges or abusing JWT invalidation.</p>
 </li>
 <li>
-<p>CORS misconfiguration allows unauthorized API access.</p>
+<p>CORS misconfiguration allows API access from unauthorized/untrusted
+    origins.</p>
 </li>
 <li>
 <p>Force browsing to authenticated pages as an unauthenticated user or
@@ -854,7 +901,10 @@ non-admin can access the admin page, this is a flaw.</p>
     Testing</a></p>
 </li>
 <li>
-<p><a href="">OWASP Cheat Sheet: Access Control</a></p>
+<p><a href="https://cheatsheetseries.owasp.org/cheatsheets/Access_Control_Cheat_Sheet.html">OWASP Cheat Sheet: Access Control</a></p>
+</li>
+<li>
+<p><a href="https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html">OWASP Cheat Sheet: Authorization</a></p>
 </li>
 <li>
 <p><a href="https://portswigger.net/blog/exploiting-cors-misconfigurations-for-bitcoins-and-bounties">PortSwigger: Exploiting CORS
@@ -862,46 +912,41 @@ non-admin can access the admin page, this is a flaw.</p>
 </li>
 </ul>
 <h2 id="list-of-mapped-cwes">List of Mapped CWEs<a class="headerlink" href="#list-of-mapped-cwes" title="Permanent link">⚓︎</a></h2>
-<p>CWE-22 Improper Limitation of a Pathname to a Restricted Directory
-('Path Traversal')</p>
-<p>CWE-23 Relative Path Traversal</p>
-<p>CWE-35 Path Traversal: '.../...//'</p>
-<p>CWE-59 Improper Link Resolution Before File Access ('Link Following')</p>
-<p>CWE-200 Exposure of Sensitive Information to an Unauthorized Actor</p>
-<p>CWE-201 Exposure of Sensitive Information Through Sent Data</p>
-<p>CWE-219 Storage of File with Sensitive Data Under Web Root</p>
-<p>CWE-264 Permissions, Privileges, and Access Controls (should no longer
-be used)</p>
-<p>CWE-275 Permission Issues</p>
-<p>CWE-276 Incorrect Default Permissions</p>
-<p>CWE-284 Improper Access Control</p>
-<p>CWE-285 Improper Authorization</p>
-<p>CWE-352 Cross-Site Request Forgery (CSRF)</p>
-<p>CWE-359 Exposure of Private Personal Information to an Unauthorized
-Actor</p>
-<p>CWE-377 Insecure Temporary File</p>
-<p>CWE-402 Transmission of Private Resources into a New Sphere ('Resource
-Leak')</p>
-<p>CWE-425 Direct Request ('Forced Browsing')</p>
-<p>CWE-441 Unintended Proxy or Intermediary ('Confused Deputy')</p>
-<p>CWE-497 Exposure of Sensitive System Information to an Unauthorized
-Control Sphere</p>
-<p>CWE-538 Insertion of Sensitive Information into Externally-Accessible
-File or Directory</p>
-<p>CWE-540 Inclusion of Sensitive Information in Source Code</p>
-<p>CWE-548 Exposure of Information Through Directory Listing</p>
-<p>CWE-552 Files or Directories Accessible to External Parties</p>
-<p>CWE-566 Authorization Bypass Through User-Controlled SQL Primary Key</p>
-<p>CWE-601 URL Redirection to Untrusted Site ('Open Redirect')</p>
-<p>CWE-639 Authorization Bypass Through User-Controlled Key</p>
-<p>CWE-651 Exposure of WSDL File Containing Sensitive Information</p>
-<p>CWE-668 Exposure of Resource to Wrong Sphere</p>
-<p>CWE-706 Use of Incorrectly-Resolved Name or Reference</p>
-<p>CWE-862 Missing Authorization</p>
-<p>CWE-863 Incorrect Authorization</p>
-<p>CWE-913 Improper Control of Dynamically-Managed Code Resources</p>
-<p>CWE-922 Insecure Storage of Sensitive Information</p>
-<p>CWE-1275 Sensitive Cookie with Improper SameSite Attribute</p>
+<p><a href="https://cwe.mitre.org/data/definitions/22.html">CWE-22 Improper Limitation of a Pathname to a Restricted Directory
+('Path Traversal')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/23.html">CWE-23 Relative Path Traversal</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/35.html">CWE-35 Path Traversal: '.../...//'</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/59.html">CWE-59 Improper Link Resolution Before File Access ('Link Following')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200 Exposure of Sensitive Information to an Unauthorized Actor</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/201.html">CWE-201 Exposure of Sensitive Information Through Sent Data</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/219.html">CWE-219 Storage of File with Sensitive Data Under Web Root</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/264.html">CWE-264 Permissions, Privileges, and Access Controls (should no longer be used)</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/275.html">CWE-275 Permission Issues</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/276.html">CWE-276 Incorrect Default Permissions</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/284.html">CWE-284 Improper Access Control</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/285.html">CWE-285 Improper Authorization</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/352.html">CWE-352 Cross-Site Request Forgery (CSRF)</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/359.html">CWE-359 Exposure of Private Personal Information to an Unauthorized Actor</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/377.html">CWE-377 Insecure Temporary File</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/402.html">CWE-402 Transmission of Private Resources into a New Sphere ('Resource Leak')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/425.html">CWE-425 Direct Request ('Forced Browsing')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/441.html">CWE-441 Unintended Proxy or Intermediary ('Confused Deputy')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497 Exposure of Sensitive System Information to an Unauthorized Control Sphere</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/538.html">CWE-538 Insertion of Sensitive Information into Externally-Accessible File or Directory</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/540.html">CWE-540 Inclusion of Sensitive Information in Source Code</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/548.html">CWE-548 Exposure of Information Through Directory Listing</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/552.html">CWE-552 Files or Directories Accessible to External Parties</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/566.html">CWE-566 Authorization Bypass Through User-Controlled SQL Primary Key</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/601.html">CWE-601 URL Redirection to Untrusted Site ('Open Redirect')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/639.html">CWE-639 Authorization Bypass Through User-Controlled Key</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/651.html">CWE-651 Exposure of WSDL File Containing Sensitive Information</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/668.html">CWE-668 Exposure of Resource to Wrong Sphere</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/706.html">CWE-706 Use of Incorrectly-Resolved Name or Reference</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/862.html">CWE-862 Missing Authorization</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/863.html">CWE-863 Incorrect Authorization</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/913.html">CWE-913 Improper Control of Dynamically-Managed Code Resources</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/922.html">CWE-922 Insecure Storage of Sensitive Information</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/1275.html">CWE-1275 Sensitive Cookie with Improper SameSite Attribute</a></p>
                 
                   
                     
@@ -910,7 +955,7 @@ File or Directory</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-16
+      Last update: 2021-09-23
     
   </small>
 </div>
@@ -979,10 +1024,12 @@ File or Directory</p>
             © Copyright 2021 - OWASP Top 10 team - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
           </div>
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -1034,10 +1081,10 @@ File or Directory</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
       
     
   </body>

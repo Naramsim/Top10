@@ -12,15 +12,15 @@
       
       
       <link rel="icon" href="../../assets/OWASP-logo.svg">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
     
     
       
-        <title>A01 Broken Access Control - OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)</title>
+        <title>A01 Contrôle d'accès rompu - OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8b42a75e.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#a01-2021-controle-dacces-casse" class="md-skip">
+        <a href="#a012021-controle-dacces-rompu" class="md-skip">
           Aller au contenu
         </a>
       
@@ -98,7 +98,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href="../.." title="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" class="md-header__button md-logo" aria-label="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" data-md-component="logo">
       
@@ -118,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              A01 Broken Access Control
+              A01 Contrôle d'accès rompu
             
           </span>
         </div>
@@ -164,14 +166,32 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../it/" hreflang="it" class="md-select__link">
+                    Italiano
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../ja/" hreflang="ja" class="md-select__link">
+                    Japanese
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../" hreflang="fr" class="md-select__link">
                     Français
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../it/" hreflang="it" class="md-select__link">
-                    Italiano
+                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -236,11 +256,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -386,10 +409,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
-      <label class="md-nav__link" for="__nav_7">
-        Liste top 10
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Liste top 10
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Liste top 10" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -398,6 +425,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
     
@@ -412,12 +440,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          A01 Broken Access Control
+          A01 Contrôle d'accès rompu
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        A01 Broken Access Control
+        A01 Contrôle d'accès rompu
       </a>
       
         
@@ -435,8 +463,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#facteurs" class="md-nav__link">
-    Facteurs
+  <a href="#factors" class="md-nav__link">
+    Factors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-prevent" class="md-nav__link">
+    How to Prevent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-attack-scenarios" class="md-nav__link">
+    Example Attack Scenarios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-mapped-cwes" class="md-nav__link">
+    List of Mapped CWEs
   </a>
   
 </li>
@@ -448,20 +518,24 @@
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../A02_2021-Cryptographic_Failures/" class="md-nav__link">
-        A02 Cryptographic Failures
+        A02 Défaillances cryptographiques
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -472,90 +546,105 @@
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../A04_2021-Insecure_Design/" class="md-nav__link">
-        A04 Insecure Design
+        A04 Conception fragile
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../A05_2021-Security_Misconfiguration/" class="md-nav__link">
-        A05 Security Misconfiguration
+        A05 Mauvaise configuration de sécurité
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../A06_2021-Vulnerable_and_Outdated_Components/" class="md-nav__link">
-        A06 Vulnerable and Outdated Components
+        A06 Composants vulnérables et obsolètes
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../A07_2021-Identification_and_Authentication_Failures/" class="md-nav__link">
-        A07 Identification and Authentication Failures
+        A07 Identification et authentification de mauvaise qualité
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../A08_2021-Software_and_Data_Integrity_Failures/" class="md-nav__link">
-        A08 Software and Data Integrity Failures
+        A08 Manque d'intégrité des données et du logiciel
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../A09_2021-Security_Logging_and_Monitoring_Failures/" class="md-nav__link">
-        A09 Security Logging and Monitoring Failures
+        A09 Carence des systèmes de contrôle et de journalisation
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../A10_2021-Server-Side_Request_Forgery_%28SSRF%29/" class="md-nav__link">
-        A10 Server Side Request Forgery (SSRF)
+        A10 Falsification de requête côté serveur
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -572,7 +661,7 @@
   
     <li class="md-nav__item">
       <a href="../A11_2021-Next_Steps/" class="md-nav__link">
-        Prochaines étapes
+        Étapes suivantes
       </a>
     </li>
   
@@ -604,8 +693,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#facteurs" class="md-nav__link">
-    Facteurs
+  <a href="#factors" class="md-nav__link">
+    Factors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-prevent" class="md-nav__link">
+    How to Prevent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-attack-scenarios" class="md-nav__link">
+    Example Attack Scenarios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-mapped-cwes" class="md-nav__link">
+    List of Mapped CWEs
   </a>
   
 </li>
@@ -627,9 +758,197 @@
                   </a>
                 
                 
-                <h1 id="a01-2021-controle-dacces-casse">A01 2021 contrôle d'accès cassé<a class="headerlink" href="#a01-2021-controle-dacces-casse" title="Permanent link">⚓︎</a></h1>
-<h2 id="facteurs">Facteurs<a class="headerlink" href="#facteurs" title="Permanent link">⚓︎</a></h2>
-<p>Text en Francais</p>
+                <h1 id="a012021-controle-dacces-rompu">A01:2021 - Contrôle d'accès rompu<a class="headerlink" href="#a012021-controle-dacces-rompu" title="Permanent link">⚓︎</a></h1>
+<h2 id="factors">Factors<a class="headerlink" href="#factors" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th align="center">CWEs Mapped</th>
+<th align="center">Max Incidence Rate</th>
+<th align="center">Avg Incidence Rate</th>
+<th align="center">Max Coverage</th>
+<th align="center">Avg Coverage</th>
+<th align="center">Avg Weighted Exploit</th>
+<th align="center">Avg Weighted Impact</th>
+<th align="center">Total Occurrences</th>
+<th align="center">Total CVEs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">34</td>
+<td align="center">55.97%</td>
+<td align="center">3.81%</td>
+<td align="center">94.55%</td>
+<td align="center">47.72%</td>
+<td align="center">6.92</td>
+<td align="center">5.93</td>
+<td align="center">318,487</td>
+<td align="center">19,013</td>
+</tr>
+</tbody>
+</table>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⚓︎</a></h2>
+<p>Moving up from the fifth position, 94% of applications were tested for
+some form of broken access control. Notable CWEs included are <em>CWE-200:
+Exposure of Sensitive Information to an Unauthorized Actor</em>, <em>CWE-201:
+Exposure of Sensitive Information Through Sent Data</em>, and <em>CWE-352:
+Cross-Site Request Forgery</em>.</p>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h2>
+<p>Access control enforces policy such that users cannot act outside of
+their intended permissions. Failures typically lead to unauthorized
+information disclosure, modification, or destruction of all data or
+performing a business function outside the user's limits. Common access
+control vulnerabilities include:</p>
+<ul>
+<li>
+<p>Bypassing access control checks by modifying the URL, internal
+    application state, or the HTML page, or simply using a custom API
+    attack tool.</p>
+</li>
+<li>
+<p>Allowing the primary key to be changed to another user's record,
+    permitting viewing or editing someone else's account.</p>
+</li>
+<li>
+<p>Elevation of privilege. Acting as a user without being logged in or
+    acting as an admin when logged in as a user.</p>
+</li>
+<li>
+<p>Metadata manipulation, such as replaying or tampering with a JSON
+    Web Token (JWT) access control token, or a cookie or hidden field
+    manipulated to elevate privileges or abusing JWT invalidation.</p>
+</li>
+<li>
+<p>CORS misconfiguration allows unauthorized API access.</p>
+</li>
+<li>
+<p>Force browsing to authenticated pages as an unauthenticated user or
+    to privileged pages as a standard user. Accessing API with missing
+    access controls for POST, PUT and DELETE.</p>
+</li>
+</ul>
+<h2 id="how-to-prevent">How to Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">⚓︎</a></h2>
+<p>Access control is only effective in trusted server-side code or
+server-less API, where the attacker cannot modify the access control
+check or metadata.</p>
+<ul>
+<li>
+<p>Except for public resources, deny by default.</p>
+</li>
+<li>
+<p>Implement access control mechanisms once and re-use them throughout
+    the application, including minimizing CORS usage.</p>
+</li>
+<li>
+<p>Model access controls should enforce record ownership rather than
+    accepting that the user can create, read, update, or delete any
+    record.</p>
+</li>
+<li>
+<p>Unique application business limit requirements should be enforced by
+    domain models.</p>
+</li>
+<li>
+<p>Disable web server directory listing and ensure file metadata (e.g.,
+    .git) and backup files are not present within web roots.</p>
+</li>
+<li>
+<p>Log access control failures, alert admins when appropriate (e.g.,
+    repeated failures).</p>
+</li>
+<li>
+<p>Rate limit API and controller access to minimize the harm from
+    automated attack tooling.</p>
+</li>
+<li>
+<p>JWT tokens should be invalidated on the server after logout.</p>
+</li>
+</ul>
+<p>Developers and QA staff should include functional access control unit
+and integration tests.</p>
+<h2 id="example-attack-scenarios">Example Attack Scenarios<a class="headerlink" href="#example-attack-scenarios" title="Permanent link">⚓︎</a></h2>
+<p><strong>Scenario #1:</strong> The application uses unverified data in a SQL call that
+is accessing account information:</p>
+<blockquote>
+<p>pstmt.setString(1, request.getParameter("acct"));</p>
+<p>ResultSet results = pstmt.executeQuery( );</p>
+</blockquote>
+<p>An attacker simply modifies the browser's 'acct' parameter to send
+whatever account number they want. If not correctly verified, the
+attacker can access any user's account.</p>
+<p>https://example.com/app/accountInfo?acct=notmyacct</p>
+<p><strong>Scenario #2:</strong> An attacker simply forces browses to target URLs. Admin
+rights are required for access to the admin page.</p>
+<blockquote>
+<p>https://example.com/app/getappInfo</p>
+<p>https://example.com/app/admin_getappInfo</p>
+</blockquote>
+<p>If an unauthenticated user can access either page, it's a flaw. If a
+non-admin can access the admin page, this is a flaw.</p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls">OWASP Proactive Controls: Enforce Access
+    Controls</a></p>
+</li>
+<li>
+<p><a href="https://owasp.org/www-project-application-security-verification-standard">OWASP Application Security Verification Standard: V4 Access
+    Control</a></p>
+</li>
+<li>
+<p><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/README">OWASP Testing Guide: Authorization
+    Testing</a></p>
+</li>
+<li>
+<p><a href="">OWASP Cheat Sheet: Access Control</a></p>
+</li>
+<li>
+<p><a href="https://portswigger.net/blog/exploiting-cors-misconfigurations-for-bitcoins-and-bounties">PortSwigger: Exploiting CORS
+    misconfiguration</a></p>
+</li>
+</ul>
+<h2 id="list-of-mapped-cwes">List of Mapped CWEs<a class="headerlink" href="#list-of-mapped-cwes" title="Permanent link">⚓︎</a></h2>
+<p>CWE-22 Improper Limitation of a Pathname to a Restricted Directory
+('Path Traversal')</p>
+<p>CWE-23 Relative Path Traversal</p>
+<p>CWE-35 Path Traversal: '.../...//'</p>
+<p>CWE-59 Improper Link Resolution Before File Access ('Link Following')</p>
+<p>CWE-200 Exposure of Sensitive Information to an Unauthorized Actor</p>
+<p>CWE-201 Exposure of Sensitive Information Through Sent Data</p>
+<p>CWE-219 Storage of File with Sensitive Data Under Web Root</p>
+<p>CWE-264 Permissions, Privileges, and Access Controls (should no longer
+be used)</p>
+<p>CWE-275 Permission Issues</p>
+<p>CWE-276 Incorrect Default Permissions</p>
+<p>CWE-284 Improper Access Control</p>
+<p>CWE-285 Improper Authorization</p>
+<p>CWE-352 Cross-Site Request Forgery (CSRF)</p>
+<p>CWE-359 Exposure of Private Personal Information to an Unauthorized
+Actor</p>
+<p>CWE-377 Insecure Temporary File</p>
+<p>CWE-402 Transmission of Private Resources into a New Sphere ('Resource
+Leak')</p>
+<p>CWE-425 Direct Request ('Forced Browsing')</p>
+<p>CWE-441 Unintended Proxy or Intermediary ('Confused Deputy')</p>
+<p>CWE-497 Exposure of Sensitive System Information to an Unauthorized
+Control Sphere</p>
+<p>CWE-538 Insertion of Sensitive Information into Externally-Accessible
+File or Directory</p>
+<p>CWE-540 Inclusion of Sensitive Information in Source Code</p>
+<p>CWE-548 Exposure of Information Through Directory Listing</p>
+<p>CWE-552 Files or Directories Accessible to External Parties</p>
+<p>CWE-566 Authorization Bypass Through User-Controlled SQL Primary Key</p>
+<p>CWE-601 URL Redirection to Untrusted Site ('Open Redirect')</p>
+<p>CWE-639 Authorization Bypass Through User-Controlled Key</p>
+<p>CWE-651 Exposure of WSDL File Containing Sensitive Information</p>
+<p>CWE-668 Exposure of Resource to Wrong Sphere</p>
+<p>CWE-706 Use of Incorrectly-Resolved Name or Reference</p>
+<p>CWE-862 Missing Authorization</p>
+<p>CWE-863 Incorrect Authorization</p>
+<p>CWE-913 Improper Control of Dynamically-Managed Code Resources</p>
+<p>CWE-922 Insecure Storage of Sensitive Information</p>
+<p>CWE-1275 Sensitive Cookie with Improper SameSite Attribute</p>
                 
                   
                     
@@ -638,7 +957,7 @@
 <div class="md-source-date">
   <small>
     
-      Dernière mise à jour: 2021-09-16
+      Dernière mise à jour: 2021-09-23
     
   </small>
 </div>
@@ -683,13 +1002,13 @@
       
       
         
-        <a href="../A02_2021-Cryptographic_Failures/" class="md-footer__link md-footer__link--next" aria-label="Suivant: A02 Cryptographic Failures" rel="next">
+        <a href="../A02_2021-Cryptographic_Failures/" class="md-footer__link md-footer__link--next" aria-label="Suivant: A02 Défaillances cryptographiques" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Suivant
               </span>
-              A02 Cryptographic Failures
+              A02 Défaillances cryptographiques
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -707,10 +1026,12 @@
             © Copyright 2021 - OWASP Top 10 team - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
           </div>
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -762,10 +1083,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
       
     
   </body>

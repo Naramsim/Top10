@@ -12,7 +12,7 @@
       
       
       <link rel="icon" href="../assets/OWASP-logo.svg">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.802231af.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.8b42a75e.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -98,7 +98,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" class="md-header__button md-logo" aria-label="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" data-md-component="logo">
       
@@ -164,14 +166,32 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../it/" hreflang="it" class="md-select__link">
+                    Italiano
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../ja/" hreflang="ja" class="md-select__link">
+                    Japanese
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../fr/" hreflang="fr" class="md-select__link">
                     Français
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../it/" hreflang="it" class="md-select__link">
-                    Italiano
+                  <a href="../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -236,11 +256,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -486,10 +509,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Top 10 List
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Top 10 List
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Top 10 List" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -498,6 +525,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -508,8 +536,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -520,8 +550,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -532,8 +564,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -544,8 +578,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -556,8 +592,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -568,8 +606,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -580,8 +620,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -592,8 +634,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -604,8 +648,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -616,6 +662,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -784,7 +831,7 @@ misconfiguration. With more shifts into highly configurable software,
 it's not surprising to see this category move up. The former category
 for XML External Entities (<abbr title="XML External Entity">XXE</abbr>) is now part of this category.</p>
 <p><strong>A06:2021-Vulnerable and Outdated Components</strong> was previously titled
-<em>Using Components with Known Vulnerabilities</em> and is #2 in the industry
+<em>Using Components with Known Vulnerabilities</em> and is #2 in the Top 10 community
 survey, but also had enough data to make the Top 10 via data analysis.
 This category moves up from #9 in 2017 and is a known issue that we
 struggle to test and assess risk. It is the only category not to have
@@ -802,28 +849,28 @@ the highest weighted impacts from <abbr title="Common Vulnerabilities and Exposu
 this category. Insecure Deserialization from 2017 is now a part of this
 larger category.</p>
 <p><strong>A09:2021-Security Logging and Monitoring Failures</strong> was previously
-<em>Insufficient Logging &amp;</em> Monitoring and is added from the industry
+<em>Insufficient Logging &amp; Monitoring</em> and is added from the industry
 survey (#3), moving up from #10 previously. This category is expanded to
 include more types of failures, is challenging to test for, and isn't
 well represented in the <abbr title="Common Vulnerabilities and Exposures">CVE</abbr>/<abbr title="Common Vulnerability Scoring System">CVSS</abbr> data. However, failures in this
 category can directly impact visibility, incident alerting, and
 forensics.</p>
-<p><strong>A10:2021-Server-Side Request Forgery</strong> is added from the industry
+<p><strong>A10:2021-Server-Side Request Forgery</strong> is added from the Top 10 community
 survey (#1). The data shows a relatively low incidence rate with above
 average testing coverage, along with above-average ratings for Exploit
 and Impact potential. This category represents the scenario where the
-industry professionals are telling us this is important, even though
+security community members are telling us this is important, even though
 it's not illustrated in the data at this time.</p>
 <h2 id="methodology">Methodology<a class="headerlink" href="#methodology" title="Permanent link">⚓︎</a></h2>
 <p>This installment of the Top 10 is more data-driven than ever but not
 blindly data-driven. We selected eight of the ten categories from
-contributed data and two categories from an industry survey at a high
+contributed data and two categories from an the Top 10 community survey at a high
 level. We do this for a fundamental reason, looking at the contributed
 data is looking into the past. AppSec researchers take time to find new
 vulnerabilities and new ways to test for them. It takes time to
 integrate these tests into tools and processes. By the time we can
 reliably test a weakness at scale, years have likely passed. To balance
-that view, we use an industry survey to ask people on the front lines
+that view, we use an community survey to ask application security and development experts on the front lines
 what they see as essential weaknesses that the data may not show yet.</p>
 <p>There are a few critical changes that we adopted to continue to mature
 the Top 10.</p>
@@ -902,7 +949,7 @@ automated and run against a large population of applications. Everything
 we find is looking back in the past and might be missing trends from the
 last year, which are not present in the data.</p>
 <p>Therefore, we only pick eight of ten categories from the data because
-it's incomplete. The other two categories are from the industry survey.
+it's incomplete. The other two categories are from the Top 10 community survey.
 It allows the practitioners on the front lines to vote for what they see
 as the highest risks that might not be in the data (and may never be
 expressed in data).</p>
@@ -1082,7 +1129,7 @@ would not be possible.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-16
+      Last update: 2021-09-23
     
   </small>
 </div>
@@ -1136,10 +1183,12 @@ would not be possible.</p>
             © Copyright 2021 - OWASP Top 10 team - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
           </div>
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -1191,10 +1240,10 @@ would not be possible.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.756773cc.min.js"></script>
+      <script src="../assets/javascripts/bundle.4fc53ad4.min.js"></script>
       
     
   </body>

@@ -12,7 +12,7 @@
       
       
       <link rel="icon" href="../../assets/OWASP-logo.svg">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8b42a75e.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -98,7 +98,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" class="md-header__button md-logo" aria-label="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" data-md-component="logo">
       
@@ -164,14 +166,32 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../" hreflang="it" class="md-select__link">
+                    Italiano
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../ja/" hreflang="ja" class="md-select__link">
+                    Japanese
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../fr/" hreflang="fr" class="md-select__link">
                     Français
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../" hreflang="it" class="md-select__link">
-                    Italiano
+                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -236,11 +256,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -386,10 +409,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
-      <label class="md-nav__link" for="__nav_7">
-        Lista top 10
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Lista top 10
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Lista top 10" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -398,18 +425,21 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../A01_2021-Broken_Access_Control/" class="md-nav__link">
-        A01 Broken Access Control
+        A01 Controllo accessi rotto
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -420,8 +450,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -432,8 +464,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -444,8 +478,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -456,8 +492,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -468,8 +506,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -480,8 +520,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -574,8 +616,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -586,8 +630,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -598,6 +644,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -719,10 +766,10 @@
 <th align="center">CWEs Mapped</th>
 <th align="center">Max Incidence Rate</th>
 <th align="center">Avg Incidence Rate</th>
-<th align="center">Max Coverage</th>
-<th align="center">Avg Coverage</th>
 <th align="center">Avg Weighted Exploit</th>
 <th align="center">Avg Weighted Impact</th>
+<th align="center">Max Coverage</th>
+<th align="center">Avg Coverage</th>
 <th align="center">Total Occurrences</th>
 <th align="center">Total CVEs</th>
 </tr>
@@ -732,10 +779,10 @@
 <td align="center">10</td>
 <td align="center">16.67%</td>
 <td align="center">2.05%</td>
-<td align="center">75.04%</td>
-<td align="center">45.35%</td>
 <td align="center">6.94</td>
 <td align="center">7.94</td>
+<td align="center">75.04%</td>
+<td align="center">45.35%</td>
 <td align="center">47,972</td>
 <td align="center">1,152</td>
 </tr>
@@ -793,7 +840,7 @@ installations.</p>
 set of Spring Boot microservices. Being functional programmers, they
 tried to ensure that their code is immutable. The solution they came up
 with is serializing the user state and passing it back and forth with
-each request. An attacker notices the "R00" Java object signature and
+each request. An attacker notices the "rO0" Java object signature (in base64) and
 uses the Java Serial Killer tool to gain remote code execution on the
 application server.</p>
 <p><strong>Scenario #2 Update without signing:</strong> Many home routers, set-top
@@ -813,8 +860,7 @@ most significant breaches of this nature in history.</p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
-<p>[OWASP Cheat Sheet: Deserialization](
-    <a href="https://www.owasp.org/index.php/Deserialization_Cheat_Sheet">https://www.owasp.org/index.php/Deserialization_Cheat_Sheet</a>)</p>
+<p><a href="https://www.owasp.org/index.php/Deserialization_Cheat_Sheet">OWASP Cheat Sheet: Deserialization</a></p>
 </li>
 <li>
 <p>[OWASP Cheat Sheet: Software Supply Chain Security]()</p>
@@ -823,31 +869,29 @@ most significant breaches of this nature in history.</p>
 <p>[OWASP Cheat Sheet: Secure build and deployment]()</p>
 </li>
 <li>
-<p>[SAFECode Software Integrity Controls](
-    https://safecode.org/publication/SAFECode_Software_Integrity_Controls0610.pdf)</p>
+<p><a href="https://safecode.org/publication/SAFECode_Software_Integrity_Controls0610.pdf">SAFECode Software Integrity Controls</a></p>
 </li>
 <li>
-<p>[A 'Worst Nightmare' Cyberattack: The Untold Story Of The
+<p><a href="https://www.npr.org/2021/04/16/985439655/a-worst-nightmare-cyberattack-the-untold-story-of-the-solarwinds-hack">A 'Worst Nightmare' Cyberattack: The Untold Story Of The
     SolarWinds
-    Hack](<a href="https://www.npr.org/2021/04/16/985439655/a-worst-nightmare-cyberattack-the-untold-story-of-the-solarwinds-hack">https://www.npr.org/2021/04/16/985439655/a-worst-nightmare-cyberattack-the-untold-story-of-the-solarwinds-hack</a>)</p>
+    Hack</a></p>
 </li>
 <li>
 <p><a href="https://www.manning.com/books/securing-devops">https://www.manning.com/books/securing-devops</a></p>
 </li>
 </ul>
 <h2 id="list-of-mapped-cwes">List of Mapped CWEs<a class="headerlink" href="#list-of-mapped-cwes" title="Permanent link">⚓︎</a></h2>
-<p>CWE-345 Insufficient Verification of Data Authenticity</p>
-<p>CWE-353 Missing Support for Integrity Check</p>
-<p>CWE-426 Untrusted Search Path</p>
-<p>CWE-494 Download of Code Without Integrity Check</p>
-<p>CWE-502 Deserialization of Untrusted Data</p>
-<p>CWE-565 Reliance on Cookies without Validation and Integrity Checking</p>
-<p>CWE-784 Reliance on Cookies without Validation and Integrity Checking in
-a Security Decision</p>
-<p>CWE-829 Inclusion of Functionality from Untrusted Control Sphere</p>
-<p>CWE-830 Inclusion of Web Functionality from an Untrusted Source</p>
-<p>CWE-915 Improperly Controlled Modification of Dynamically-Determined
-Object Attributes</p>
+<p><a href="https://cwe.mitre.org/data/definitions/345.html">CWE-345 Insufficient Verification of Data Authenticity</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/353.html">CWE-353 Missing Support for Integrity Check</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/426.html">CWE-426 Untrusted Search Path</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/494.html">CWE-494 Download of Code Without Integrity Check</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/502.html">CWE-502 Deserialization of Untrusted Data</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/565.html">CWE-565 Reliance on Cookies without Validation and Integrity Checking</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/784.html">CWE-784 Reliance on Cookies without Validation and Integrity Checking in
+a Security Decision</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/829.html">CWE-829 Inclusion of Functionality from Untrusted Control Sphere</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/830.html">CWE-830 Inclusion of Web Functionality from an Untrusted Source</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/915.html">CWE-915 Improperly Controlled Modification of Dynamically-Determined Object Attributes</a></p>
                 
                   
                     
@@ -856,7 +900,7 @@ Object Attributes</p>
 <div class="md-source-date">
   <small>
     
-      Ultimo aggiornamento: 2021-09-16
+      Ultimo aggiornamento: 2021-09-23
     
   </small>
 </div>
@@ -925,10 +969,12 @@ Object Attributes</p>
             © Copyright 2021 - OWASP Top 10 team - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
           </div>
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -980,10 +1026,10 @@ Object Attributes</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copia", "clipboard.copied": "Copiato", "search.config.lang": "it", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Cerca", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copia", "clipboard.copied": "Copiato", "search.config.lang": "it", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Cerca", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
       
     
   </body>
