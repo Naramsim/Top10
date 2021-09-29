@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="OWASP Top 10:2021 (DRAFT)">
+        <meta name="description" content="OWASP Top 10:2021">
       
       
       
@@ -16,7 +16,7 @@
     
     
       
-        <title>A03 注入式攻擊 - OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)</title>
+        <title>A03 注入式攻擊 - OWASP Top 10:2021</title>
       
     
     
@@ -102,7 +102,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" class="md-header__button md-logo" aria-label="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" data-md-component="logo">
+    <a href="../.." title="OWASP Top 10:2021" class="md-header__button md-logo" aria-label="OWASP Top 10:2021" data-md-component="logo">
       
   <img src="../../assets/OWASP-logo.svg" alt="logo">
 
@@ -114,7 +114,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)
+            OWASP Top 10:2021
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -166,20 +166,20 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../it/" hreflang="it" class="md-select__link">
-                    Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../ja/" hreflang="ja" class="md-select__link">
-                    Japanese
+                  <a href="../../ar/" hreflang="ar" class="md-select__link">
+                    العربية
                   </a>
                 </li>
                 
                 <li class="md-select__item">
                   <a href="../../fr/" hreflang="fr" class="md-select__link">
                     Français
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../ja/" hreflang="ja" class="md-select__link">
+                    Japanese
                   </a>
                 </li>
                 
@@ -192,6 +192,12 @@
                 <li class="md-select__item">
                   <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
                     Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../it/" hreflang="it" class="md-select__link">
+                    Italiano
                   </a>
                 </li>
                 
@@ -279,12 +285,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" class="md-nav__button md-logo" aria-label="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" data-md-component="logo">
+    <a href="../.." title="OWASP Top 10:2021" class="md-nav__button md-logo" aria-label="OWASP Top 10:2021" data-md-component="logo">
       
   <img src="../../assets/OWASP-logo.svg" alt="logo">
 
     </a>
-    OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)
+    OWASP Top 10:2021
   </label>
   
     <div class="md-nav__source">
@@ -413,14 +419,14 @@
       
       
         <label class="md-nav__link" for="__nav_7">
-          Top 10 名單
+          Top 10:2021 名單
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Top 10 名單" data-md-level="1">
+      <nav class="md-nav" aria-label="Top 10:2021 名單" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
-          Top 10 名單
+          Top 10:2021 名單
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -758,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a032021">A03:2021 – 注入式攻擊<a class="headerlink" href="#a032021" title="Permanent link">⚓︎</a></h1>
-<h2 id="_1">對照因素<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
+                <h1 id="a032021">A03:2021 – 注入式攻擊</h1>
+<h2 id="_1">對照因素</h2>
 <table>
 <thead>
 <tr>
@@ -788,12 +794,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_2">概述<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<h2 id="_2">概述</h2>
 <p>Injection slides down to the third position. 94% of the applications
 were tested for some form of injection. Notable CWEs included are
 <em>CWE-79: Cross-site Scripting</em>, <em>CWE-89: SQL Injection</em>, and <em>CWE-73:
 External Control of File Name or Path</em>.</p>
-<h2 id="_3">描述<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
+<h2 id="_3">描述</h2>
 <p>An application is vulnerable to attack when:</p>
 <ul>
 <li>
@@ -824,7 +830,7 @@ data inputs is strongly encouraged. Organizations can include the static
 source (SAST) and dynamic application test (DAST) tools into the CI/CD
 pipeline to identify introduced injection flaws before production
 deployment.</p>
-<h2 id="_4">如何預防<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
+<h2 id="_4">如何預防</h2>
 <ul>
 <li>
 <p>Preventing injection requires keeping data separate from commands
@@ -859,9 +865,8 @@ deployment.</p>
     disclosure of records in case of SQL injection.</p>
 </li>
 </ul>
-<h2 id="_5">攻擊情境範例<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h2>
-<p><strong>情境 #1:</strong> An application uses untrusted data in the construction
-of the following vulnerable SQL call:</p>
+<h2 id="_5">攻擊情境範例</h2>
+<p><strong>情境 #1:</strong> 應用程式使用了不被信任的資料在脆弱的 SQL 呼叫中：</p>
 <p>String query = "SELECT * FROM accounts WHERE custID='" +
 request.getParameter("id") + "'";</p>
 <p><strong>情境 #2:</strong> Similarly, an application’s blind trust in frameworks
@@ -877,7 +882,7 @@ browser to send: ‘ or ‘1’=’1. For example:</p>
 <p>This changes the meaning of both queries to return all the records from
 the accounts table. More dangerous attacks could modify or delete data
 or even invoke stored procedures.</p>
-<h2 id="_6">參考<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h2>
+<h2 id="_6">參考</h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c3-secure-database">OWASP Proactive Controls: Secure Database
@@ -919,8 +924,9 @@ or even invoke stored procedures.</p>
     injection</a></p>
 </li>
 </ul>
-<h2 id="cwe">對應的 CWE 列表<a class="headerlink" href="#cwe" title="Permanent link">⚓︎</a></h2>
+<h2 id="cwe">對應的 CWE 列表</h2>
 <p>CWE-20 Improper Input Validation</p>
+<p>CWE-20 不當的輸入確認</p>
 <p>CWE-74 Improper Neutralization of Special Elements in Output Used by a
 Downstream Component ('Injection')</p>
 <p>CWE-75 Failure to Sanitize Special Elements into a Different Plane
@@ -979,7 +985,7 @@ Expression Language Statement ('Expression Language Injection')</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-23
+      Last update: 2021-09-29
     
   </small>
 </div>

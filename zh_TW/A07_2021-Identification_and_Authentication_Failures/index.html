@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="OWASP Top 10:2021 (DRAFT)">
+        <meta name="description" content="OWASP Top 10:2021">
       
       
       
@@ -16,7 +16,7 @@
     
     
       
-        <title>A07 認證及驗證機制失效 - OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)</title>
+        <title>A07 認證及驗證機制失效 - OWASP Top 10:2021</title>
       
     
     
@@ -102,7 +102,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" class="md-header__button md-logo" aria-label="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" data-md-component="logo">
+    <a href="../.." title="OWASP Top 10:2021" class="md-header__button md-logo" aria-label="OWASP Top 10:2021" data-md-component="logo">
       
   <img src="../../assets/OWASP-logo.svg" alt="logo">
 
@@ -114,7 +114,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)
+            OWASP Top 10:2021
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -166,20 +166,20 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../it/" hreflang="it" class="md-select__link">
-                    Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../ja/" hreflang="ja" class="md-select__link">
-                    Japanese
+                  <a href="../../ar/" hreflang="ar" class="md-select__link">
+                    العربية
                   </a>
                 </li>
                 
                 <li class="md-select__item">
                   <a href="../../fr/" hreflang="fr" class="md-select__link">
                     Français
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../ja/" hreflang="ja" class="md-select__link">
+                    Japanese
                   </a>
                 </li>
                 
@@ -192,6 +192,12 @@
                 <li class="md-select__item">
                   <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
                     Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../it/" hreflang="it" class="md-select__link">
+                    Italiano
                   </a>
                 </li>
                 
@@ -279,12 +285,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" class="md-nav__button md-logo" aria-label="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" data-md-component="logo">
+    <a href="../.." title="OWASP Top 10:2021" class="md-nav__button md-logo" aria-label="OWASP Top 10:2021" data-md-component="logo">
       
   <img src="../../assets/OWASP-logo.svg" alt="logo">
 
     </a>
-    OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)
+    OWASP Top 10:2021
   </label>
   
     <div class="md-nav__source">
@@ -413,14 +419,14 @@
       
       
         <label class="md-nav__link" for="__nav_7">
-          Top 10 名單
+          Top 10:2021 名單
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Top 10 名單" data-md-level="1">
+      <nav class="md-nav" aria-label="Top 10:2021 名單" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
-          Top 10 名單
+          Top 10:2021 名單
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -758,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a072021">A07:2021 – 認證及驗證機制失效<a class="headerlink" href="#a072021" title="Permanent link">⚓︎</a></h1>
-<h2 id="_1">弱點因素<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
+                <h1 id="a072021">A07:2021 – 認證及驗證機制失效</h1>
+<h2 id="_1">弱點因素</h2>
 <table>
 <thead>
 <tr>
@@ -788,9 +794,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_2">弱點簡介<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<h2 id="_2">弱點簡介</h2>
 <p>之前被稱之為"無效的身份認證"，此類別從第二名下滑，現在包含了與身份識別失效相關的CWEs，如知名的"CWE-297: 與不匹配的服務端進行不適當的憑證確認", "CWE-287: 不適當的認證", "CWE-384: 會話(session)固定攻擊"</p>
-<h2 id="_3">弱點描述<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
+<h2 id="_3">弱點描述</h2>
 <p>確認用戶的身分、認證、會話(session)管理對於防止與認證相關的攻擊至關重要，如果應用程式存在以下情況，則可能有認證的漏洞:</p>
 <ul>
 <li>
@@ -822,7 +828,7 @@
 <p>沒有正確的註銷會話(session) ID。 用戶的會話(session)或認證tokens(主要是單一登入(SSO)token) 沒有在登出時或一段時間沒活動時被適當的註銷。</p>
 </li>
 </ul>
-<h2 id="_4">如何預防<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
+<h2 id="_4">如何預防</h2>
 <ul>
 <li>
 <p>在可能的情況下，實作多因素認證來防止自動化撞庫攻擊、暴力破解、以及遭竊認證資訊被重複利用的攻擊。</p>
@@ -846,11 +852,11 @@
 <p>使用伺服器端、安全的內建會話(session)管理器，在登入後產生新的高亂數隨機程度(entropy)的隨機會話(session)ID。會話(session)ID不應出現在URL中，必須被安全的儲存，並且在登出後、閒置、超時後被註銷。</p>
 </li>
 </ul>
-<h2 id="_5">攻擊情境範例<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h2>
+<h2 id="_5">攻擊情境範例</h2>
 <p><strong>情境 #1:</strong> 使用已知列表密碼的撞庫攻擊是一種常見的攻擊方式，假設應用程式沒有實施自動化威脅或撞庫攻擊的保護，在這種情況下，應用程式會被利用為密碼預報的工具來判斷認證資訊是否有效。</p>
 <p><strong>情境 #2:</strong> 大多數的認證攻擊是因為持續的使用密碼作為唯一因素，最佳實務、密碼輪換、以及複雜度的要求會鼓勵用戶使用和重複使用脆弱的密碼。建議組織按照NIST 800-63停止這些做法並使用多因素認證。</p>
 <p><strong>情境 #3:</strong> 應用程式的會話超時沒有被設定正確。一個用戶使用公用電腦來存取應用程式時，用戶沒有選擇"登出"而是簡單的關閉瀏覽器分頁就離開，此時一個攻擊者在一小時後使用同一個瀏覽器，前一個用戶仍然處於通過認證的狀態。</p>
-<h2 id="_6">參考文獻<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h2>
+<h2 id="_6">參考文獻</h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c6-digital-identity">OWASP Proactive Controls: Implement Digital
@@ -889,7 +895,7 @@
 <p>NIST 800-63b: 5.1.1 Memorized Secrets</p>
 </li>
 </ul>
-<h2 id="cwes">對應的 CWEs 清單<a class="headerlink" href="#cwes" title="Permanent link">⚓︎</a></h2>
+<h2 id="cwes">對應的 CWEs 清單</h2>
 <p>CWE-255 認證資訊管理的錯誤</p>
 <p>CWE-259 密碼寫死</p>
 <p>CWE-287 不適當的認證</p>
@@ -920,7 +926,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-23
+      Last update: 2021-09-29
     
   </small>
 </div>

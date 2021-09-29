@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="OWASP Top 10:2021 (DRAFT)">
+        <meta name="description" content="OWASP Top 10:2021">
       
       
       
@@ -16,7 +16,7 @@
     
     
       
-        <title>A07 Identification and Authentication Failures - OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)</title>
+        <title>A07 Identification and Authentication Failures - OWASP Top 10:2021</title>
       
     
     
@@ -102,7 +102,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" class="md-header__button md-logo" aria-label="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" data-md-component="logo">
+    <a href="../.." title="OWASP Top 10:2021" class="md-header__button md-logo" aria-label="OWASP Top 10:2021" data-md-component="logo">
       
   <img src="../../assets/OWASP-logo.svg" alt="logo">
 
@@ -114,7 +114,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)
+            OWASP Top 10:2021
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -166,20 +166,20 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../it/" hreflang="it" class="md-select__link">
-                    Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../ja/" hreflang="ja" class="md-select__link">
-                    Japanese
+                  <a href="../../ar/" hreflang="ar" class="md-select__link">
+                    العربية
                   </a>
                 </li>
                 
                 <li class="md-select__item">
                   <a href="../../fr/" hreflang="fr" class="md-select__link">
                     Français
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../ja/" hreflang="ja" class="md-select__link">
+                    Japanese
                   </a>
                 </li>
                 
@@ -192,6 +192,12 @@
                 <li class="md-select__item">
                   <a href="../" hreflang="pt_BR" class="md-select__link">
                     Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../it/" hreflang="it" class="md-select__link">
+                    Italiano
                   </a>
                 </li>
                 
@@ -279,12 +285,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" class="md-nav__button md-logo" aria-label="OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)" data-md-component="logo">
+    <a href="../.." title="OWASP Top 10:2021" class="md-nav__button md-logo" aria-label="OWASP Top 10:2021" data-md-component="logo">
       
   <img src="../../assets/OWASP-logo.svg" alt="logo">
 
     </a>
-    OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)
+    OWASP Top 10:2021
   </label>
   
     <div class="md-nav__source">
@@ -413,14 +419,14 @@
       
       
         <label class="md-nav__link" for="__nav_7">
-          Lista top 10
+          Lista top 10:2021
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Lista top 10" data-md-level="1">
+      <nav class="md-nav" aria-label="Lista top 10:2021" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
-          Lista top 10
+          Lista top 10:2021
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -758,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a072021-identification-and-authentication-failures">A07:2021 – Identification and Authentication Failures<a class="headerlink" href="#a072021-identification-and-authentication-failures" title="Permanent link">⚓︎</a></h1>
-<h2 id="factors">Factors<a class="headerlink" href="#factors" title="Permanent link">⚓︎</a></h2>
+                <h1 id="a072021-identification-and-authentication-failures">A07:2021 – Identification and Authentication Failures    <img align="right" alt="icon" src="../../assets/TOP_10_Icons_Final_Identification_and_Authentication_Failures.png" style="height:80px;width:80px" /></h1>
+<h2 id="factors">Factors</h2>
 <table>
 <thead>
 <tr>
@@ -788,13 +794,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⚓︎</a></h2>
+<h2 id="overview">Overview</h2>
 <p>Previously known as <em>Broken Authentication</em>, this category slid down
-from the second position and now includes CWEs related to identification
+from the second position and now includes Common Weakness 
+Enumerations (CWEs) related to identification
 failures. Notable CWEs included are <em>CWE-297: Improper Validation of
 Certificate with Host Mismatch</em>, <em>CWE-287: Improper Authentication</em>, and
 <em>CWE-384: Session Fixation</em>.</p>
-<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h2>
+<h2 id="description">Description</h2>
 <p>Confirmation of the user's identity, authentication, and session
 management is critical to protect against authentication-related
 attacks. There may be authentication weaknesses if the application:</p>
@@ -808,7 +815,7 @@ attacks. There may be authentication weaknesses if the application:</p>
 </li>
 <li>
 <p>Permits default, weak, or well-known passwords, such as "Password1"
-    or "admin/admin. "</p>
+    or "admin/admin".</p>
 </li>
 <li>
 <p>Uses weak or ineffective credential recovery and forgot-password
@@ -816,8 +823,8 @@ attacks. There may be authentication weaknesses if the application:</p>
     safe.</p>
 </li>
 <li>
-<p>Uses plain text, encrypted, or weakly hashed passwords (see
-    A2:2021-Cryptographic Failures).</p>
+<p>Uses plain text, encrypted, or weakly hashed passwords data stores (see
+    <strong>A02:2021-Cryptographic Failures</strong>).</p>
 </li>
 <li>
 <p>Has missing or ineffective multi-factor authentication.</p>
@@ -834,7 +841,7 @@ attacks. There may be authentication weaknesses if the application:</p>
     properly invalidated during logout or a period of inactivity.</p>
 </li>
 </ul>
-<h2 id="how-to-prevent">How to Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">⚓︎</a></h2>
+<h2 id="how-to-prevent">How to Prevent</h2>
 <ul>
 <li>
 <p>Where possible, implement multi-factor authentication to prevent
@@ -850,7 +857,10 @@ attacks. There may be authentication weaknesses if the application:</p>
     passwords against the top 10,000 worst passwords list.</p>
 </li>
 <li>
-<p>Align password length, complexity, and rotation policies with NIST
+<p>Align password length, complexity, and rotation policies with N</p>
+</li>
+<li>
+<p>National Institute of Standards and Technology (NIST)
     800-63b's guidelines in section 5.1.1 for Memorized Secrets or other
     modern, evidence-based password policies.</p>
 </li>
@@ -871,7 +881,7 @@ attacks. There may be authentication weaknesses if the application:</p>
     logout, idle, and absolute timeouts.</p>
 </li>
 </ul>
-<h2 id="example-attack-scenarios">Example Attack Scenarios<a class="headerlink" href="#example-attack-scenarios" title="Permanent link">⚓︎</a></h2>
+<h2 id="example-attack-scenarios">Example Attack Scenarios</h2>
 <p><strong>Scenario #1:</strong> Credential stuffing, the use of lists of known
 passwords, is a common attack. Suppose an application does not implement
 automated threat or credential stuffing protection. In that case, the
@@ -887,7 +897,7 @@ user uses a public computer to access an application. Instead of
 selecting "logout," the user simply closes the browser tab and walks
 away. An attacker uses the same browser an hour later, and the user is
 still authenticated.</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
+<h2 id="references">References</h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c6-digital-identity">OWASP Proactive Controls: Implement Digital
@@ -926,7 +936,7 @@ still authenticated.</p>
 <p>NIST 800-63b: 5.1.1 Memorized Secrets</p>
 </li>
 </ul>
-<h2 id="list-of-mapped-cwes">List of Mapped CWEs<a class="headerlink" href="#list-of-mapped-cwes" title="Permanent link">⚓︎</a></h2>
+<h2 id="list-of-mapped-cwes">List of Mapped CWEs</h2>
 <p><a href="https://cwe.mitre.org/data/definitions/255.html">CWE-255 Credentials Management Errors</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/259.html">CWE-259 Use of Hard-coded Password</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/287.html">CWE-287 Improper Authentication</a></p>
@@ -957,7 +967,7 @@ still authenticated.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-23
+      Last update: 2021-09-29
     
   </small>
 </div>
