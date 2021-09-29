@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../fr/" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../ar/" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -764,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a092021-security-logging-and-monitoring-failures">A09:2021 – Security Logging and Monitoring Failures</h1>
-<h2 id="factors">Factors</h2>
+                <h1 id="a092021-security-logging-and-monitoring-failures">A09:2021 – Security Logging and Monitoring Failures<a class="headerlink" href="#a092021-security-logging-and-monitoring-failures" title="Permanent link">⚓︎</a></h1>
+<h2 id="factors">Factors<a class="headerlink" href="#factors" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -822,7 +822,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="overview">Overview</h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⚓︎</a></h2>
 <p>Security logging and monitoring came from the industry survey (#3), up
 slightly from the tenth position in the OWASP Top 10 2017. Logging and
 monitoring can be challenging to test, often involving interviews or
@@ -834,7 +834,7 @@ Insufficient Logging</em> to include <em>CWE-117 Improper Output Neutralization
 for Logs</em>, <em>CWE-223 Omission of Security-relevant Information</em>, and
 <em>CWE-532</em> <em>Insertion of Sensitive Information into Log File</em>.</p>
 <p>安全記錄及監控是業界調查結果 (#3)，由2017年的第十名稍微上升。記錄及監控功能驗證非常有挑戰性，通常需要以訪談或詢問之方式檢驗有無偵測滲透測試的攻擊活動。偵測及應變對資安事件至關重要，但此類型之CVE/CVSS資料不多。儘管如此，此類型對於事件告警、可見性和鑑識仍然非常有影響力。此類型涵蓋CWE-778不足地記錄，CWE-117未經適當處理之日誌輸出，CWE-223遺漏安全相關資訊及CWE-532於日誌檔案置入敏感資訊。</p>
-<h2 id="description">Description</h2>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h2>
 <p>Returning to the OWASP Top 10 2021, this category is to help detect,
 escalate, and respond to active breaches. Without logging and
 monitoring, breaches cannot be detected. Insufficient logging,
@@ -894,7 +894,7 @@ detection, monitoring, and active response occurs any time:</p>
 events visible to a user or an attacker (see A01:2021 – Broken Access
 Control).</p>
 <p>允許使用者或攻擊者讀取日誌或告警事件可能早成資訊洩漏(參考A01:2021權限控制失效)</p>
-<h2 id="how-to-prevent">How to Prevent</h2>
+<h2 id="how-to-prevent">How to Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">⚓︎</a></h2>
 <p>Developers should implement some or all the following controls, d
 epending on the risk of the application:</p>
 <p>開發者應依據應用程式所面臨風險實作下列部分或全部的控制項：</p>
@@ -951,7 +951,7 @@ such as the OWASP ModSecurity Core Rule Set, and open-source log
 correlation software, such as the ELK stack, that feature custom
 dashboards and alerting.</p>
 <p>現有多種商業化及開放原始碼應用程式保護架構，如OWASP ModSecurity Core Rule Set及開放原始碼日誌關聯軟體可客製化儀表板及告警，如 ELK stack。</p>
-<h2 id="example-attack-scenarios">Example Attack Scenarios</h2>
+<h2 id="example-attack-scenarios">Example Attack Scenarios<a class="headerlink" href="#example-attack-scenarios" title="Permanent link">⚓︎</a></h2>
 <p><strong>Scenario #1:</strong> A childrens' health plan provider's website operator
 couldn't detect a breach due to a lack of monitoring and logging. An
 external party informed the health plan provider that an attacker had
@@ -973,7 +973,7 @@ vulnerabilities exploited by attackers, who harvested more than 400,000
 customer payment records. The airline was fined 20 million pounds as a
 result by the privacy regulator.</p>
 <p>情境3：一家大型歐洲航空公司發生依GDPR應報告之個資事故。 據報導，攻擊者利用支付應用系統之安全漏洞，取得超過40萬筆客戶支付紀錄。 該航空公司遭隱私主管機關裁罰兩千萬英鎊。</p>
-<h2 id="references">References</h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c9-security-logging.html">OWASP Proactive Controls: Implement Logging and
@@ -1006,7 +1006,7 @@ result by the privacy regulator.</p>
     Events</a></p>
 </li>
 </ul>
-<h2 id="list-of-mapped-cwes">List of Mapped CWEs</h2>
+<h2 id="list-of-mapped-cwes">List of Mapped CWEs<a class="headerlink" href="#list-of-mapped-cwes" title="Permanent link">⚓︎</a></h2>
 <p>CWE-117 Improper Output Neutralization for Logs</p>
 <p>CWE-117 未經適當處理之日誌輸出</p>
 <p>CWE-223 Omission of Security-relevant Information</p>
@@ -1023,7 +1023,7 @@ result by the privacy regulator.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-29
+      Last update: 2021-09-30
     
   </small>
 </div>

@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../ar/" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -818,8 +818,8 @@
                   </a>
                 
                 
-                <h1 id="a042021-insecure-design">A04:2021 – Insecure Design   <img align="right" alt="icon" src="../../assets/TOP_10_Icons_Final_Insecure_Design.png" style="height:80px;width:80px" /></h1>
-<h2 id="factors">Factors</h2>
+                <h1 id="a042021-insecure-design">A04:2021 – Insecure Design   <img align="right" alt="icon" src="../../assets/TOP_10_Icons_Final_Insecure_Design.png" style="height:80px;width:80px" /><a class="headerlink" href="#a042021-insecure-design" title="Permanent link">⚓︎</a></h1>
+<h2 id="factors">Factors<a class="headerlink" href="#factors" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -848,17 +848,17 @@
 </tr>
 </tbody>
 </table>
-<h2 id="overview">Overview</h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⚓︎</a></h2>
 <p>A new category for 2021 focuses on risks related to design and architectural flaws, with a call for more use of threat modeling, secure design patterns, and reference architectures. As a community we need to move beyond  "shift-left" in the coding space to pre-code activities that are critical for the principles of Secure by Design. Notable Common Weakness Enumerations (CWEs) include <em>CWE-209: Generation of Error Message Containing Sensitive Information</em>, <em>CWE-256: Unprotected Storage of Credentials</em>, <em>CWE-501: Trust Boundary Violation</em>, and <em>CWE-522: Insufficiently Protected Credentials</em>.</p>
-<h2 id="description">Description</h2>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h2>
 <p>Insecure design is a broad category representing different weaknesses, expressed as “missing or ineffective control design.” Insecure design is not the source for all other Top 10 risk categories. There is a difference between insecure design and insecure implementation. We differentiate between design flaws and implementation defects for a reason, they have different root causes and remediation. A secure design can still have implementation defects leading to vulnerabilities that may be exploited. An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks. One of the factors that contribute to insecure design is the lack of business risk profiling inherent in the software or system being developed, and thus the failure to determine what level of security design is required.</p>
-<h3 id="requirements-and-resource-management">Requirements and Resource Management</h3>
+<h3 id="requirements-and-resource-management">Requirements and Resource Management<a class="headerlink" href="#requirements-and-resource-management" title="Permanent link">⚓︎</a></h3>
 <p>Collect and negotiate the business requirements for an application with the business, including the protection requirements concerning confidentiality, integrity, availability, and authenticity of all data assets and the expected business logic. Take into account how exposed your application will be and if you need segregation of tenants (additionally to access control). Compile the technical requirements, including functional and non-functional security requirements. Plan and negotiate the budget covering all design, build, testing, and operation, including security activities.</p>
-<h3 id="secure-design">Secure Design</h3>
+<h3 id="secure-design">Secure Design<a class="headerlink" href="#secure-design" title="Permanent link">⚓︎</a></h3>
 <p>Secure design is a culture and methodology that constantly evaluates threats and ensures that code is robustly designed and tested to prevent known attack methods. Threat modeling should be integrated into refinement sessions (or similar activities); look for changes in data flows and access control or other security controls. In the user story development determine the correct flow and failure states, ensure they are well understood and agreed upon by responsible and impacted parties. Analyze assumptions and conditions for expected and failure flows, ensure they are still accurate and desirable. Determine how to validate the assumptions and enforce conditions needed for proper behaviors. Ensure the results are documented in the user story. Learn from mistakes and offer positive incentives to promote improvements. Secure design is neither an add-on nor a tool that you can add to software.</p>
-<h3 id="secure-development-lifecycle">Secure Development Lifecycle</h3>
+<h3 id="secure-development-lifecycle">Secure Development Lifecycle<a class="headerlink" href="#secure-development-lifecycle" title="Permanent link">⚓︎</a></h3>
 <p>Secure software requires a secure development lifecycle, some form of secure design pattern, paved road methodology, secured component library, tooling, and threat modeling. Reach out for your security specialists at the beginning of a software project throughout the whole project and maintenance of your software. Consider leveraging the <a href="https://owaspsamm.org">OWASP Software Assurance Maturity Model (SAMM)</a> to help structure your secure software development efforts.</p>
-<h2 id="how-to-prevent">How to Prevent</h2>
+<h2 id="how-to-prevent">How to Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p>Establish and use a secure development lifecycle with AppSec
@@ -896,7 +896,7 @@
 <p>Limit resource consumption by user or service</p>
 </li>
 </ul>
-<h2 id="example-attack-scenarios">Example Attack Scenarios</h2>
+<h2 id="example-attack-scenarios">Example Attack Scenarios<a class="headerlink" href="#example-attack-scenarios" title="Permanent link">⚓︎</a></h2>
 <p><strong>Scenario #1:</strong> A credential recovery workflow might include “questions
 and answers,” which is prohibited by NIST 800-63b, the OWASP ASVS, and
 the OWASP Top 10. Questions and answers cannot be trusted as evidence of
@@ -915,7 +915,7 @@ enthusiasts who cannot obtain these cards at any price. Careful anti-bot
 design and domain logic rules, such as purchases made within a few
 seconds of availability, might identify inauthentic purchases and
 rejected such transactions.</p>
-<h2 id="references">References</h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p><a href="Coming Soon">OWASP Cheat Sheet: Secure Design Principles</a></p>
@@ -936,7 +936,7 @@ rejected such transactions.</p>
 <p><a href="https://github.com/hysnsec/awesome-threat-modelling">Awesome Threat Modeling</a></p>
 </li>
 </ul>
-<h2 id="list-of-mapped-cwes">List of Mapped CWEs</h2>
+<h2 id="list-of-mapped-cwes">List of Mapped CWEs<a class="headerlink" href="#list-of-mapped-cwes" title="Permanent link">⚓︎</a></h2>
 <p><a href="https://cwe.mitre.org/data/definitions/73.html">CWE-73 External Control of File Name or Path</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/183.html">CWE-183 Permissive List of Allowed Inputs</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/209.html">CWE-209 Generation of Error Message Containing Sensitive Information</a></p>
@@ -985,7 +985,7 @@ rejected such transactions.</p>
 <div class="md-source-date">
   <small>
     
-      Dernière mise à jour: 2021-09-29
+      Dernière mise à jour: 2021-09-30
     
   </small>
 </div>

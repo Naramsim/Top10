@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../fr/" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -764,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a012021">A01:2021 –  تخطي صلاحيات الوصول</h1>
-<h2 id="_1">العوامل</h2>
+                <h1 id="a012021">A01:2021 –  تخطي صلاحيات الوصول<a class="headerlink" href="#a012021" title="Permanent link">⚓︎</a></h1>
+<h2 id="_1">العوامل<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -794,9 +794,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_2">نظرة عامة</h2>
+<h2 id="_2">نظرة عامة<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <p>صعد هذا المعيار من المركز الخامس في الإصدار السابق إلى الأول في هذا الإصدار بعد اختبار ثغرات "تخطي صلاحيات التحكم بالوصول" على 94% من التطبيقات وقد لوحظ أنها تعاني من نقاط الضعف الشائعة "CWEs” تشمل : CWE-200 و CWE-201 و CWE-352</p>
-<h2 id="_3">الوصف</h2>
+<h2 id="_3">الوصف<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <p>تفرض صلاحيات التحكم بالوصول سياسات وقوانين مثل ان المستخدم لا يمكنه التصرف خارج نطاق الأذونات الممنوحة له. عادة ما تؤدي هذه الاخطاء الى كشف معلومات غير مصرح بها او التعديل عليها، او تخريب جميع البيانات أو حتى تنفيذ إجراءات خارج صلاحيات المستخدم المسموحة. تتضمن نقاط الضعف الشائعة لصلاحيات التحكم بالوصول:</p>
 <ul>
 <li>
@@ -818,7 +818,7 @@
 <p>استعراض صفحات "تستلزم المصادقة" عبر مستخدمين "غير مصادق عليهم" أو الوصول الى صفحات ذات امتيازات عليا باستخدام صلاحيات “حساب مستخدم “، أو الوصول الى واجهة برمجة التطبيقات "API” بوجود قصور في "التحكم في صلاحيات الوصول" مما يؤدي الى تنفيذ طلباتPOST، PUT، DELETE.</p>
 </li>
 </ul>
-<h2 id="_4">كيفية الحماية منها</h2>
+<h2 id="_4">كيفية الحماية منها<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
 <p>يكون "التحكم بصلاحيات الوصول" فعالا فقط عندما عند تطبيقه على <strong>الشفرة المصدرية</strong> من جهة الخوادم الموثوقة- trusted server-side code، أو الخوادم التي لا تملك واجهة برمجة تطبيقات والتي يطلق عليها (server-less API)، حيث لا يستطيع المهاجم تعديل "صلاحيات التحكم بالوصول" أو التلاعب في البيانات الوصفية.</p>
 <ul>
 <li>
@@ -847,7 +847,7 @@
 </li>
 </ul>
 <p>يجب على فرق المطوّرين وموظفين قسم ضمان الجودة "QA" أن تتضمّن  وحدة  فعالة للتحكم في الوصول وإجراء اختبارات التكامل .</p>
-<h2 id="_5">أمثلة على سيناريوهات الهجوم</h2>
+<h2 id="_5">أمثلة على سيناريوهات الهجوم<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h2>
 <p><strong>سيناريو #1:</strong> يستخدم التطبيق بيانات لم يتم التحقق منها في استدعاء SQL التي بدورها تصل الى معلومات الحساب:</p>
 <blockquote>
 <p>pstmt.setString(1, request.getParameter("acct"));</p>
@@ -861,7 +861,7 @@
 <p>https://example.com/app/admin_getappInfo</p>
 </blockquote>
 <p>يعتبر خللا اذا كان يمكن للمستخدم غير المصرح له الوصول الى اي من الصفحتين. يعتبر خللا اذا كان يمكن لغير المسؤول الوصول لصفحة المسؤول.</p>
-<h2 id="_6">المصادر</h2>
+<h2 id="_6">المصادر<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls">OWASP Proactive Controls: Enforce Access Controls</a></p>
@@ -886,7 +886,7 @@
 <p><a href="https://www.oauth.com/oauth2-servers/listing-authorizations/revoking-access/">OAuth: Revoking Access</a></p>
 </li>
 </ul>
-<h2 id="cwes">قائمة الربط مع إطار CWEs</h2>
+<h2 id="cwes">قائمة الربط مع إطار CWEs<a class="headerlink" href="#cwes" title="Permanent link">⚓︎</a></h2>
 <p><a href="https://cwe.mitre.org/data/definitions/22.html">CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/23.html">CWE-23 Relative Path Traversal</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/35.html">CWE-35 Path Traversal: '.../...//'</a></p>
@@ -929,7 +929,7 @@
 <div class="md-source-date">
   <small>
     
-      اخر تحديث: 2021-09-29
+      اخر تحديث: 2021-09-30
     
   </small>
 </div>

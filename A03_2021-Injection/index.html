@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../fr/" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../zh_TW/" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../ar/" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -764,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a032021-injection">A03:2021 – Injection    <img align="right" alt="icon" src="../assets/TOP_10_Icons_Final_Injection.png" style="height:80px;width:80px" /></h1>
-<h2 id="factors">Factors</h2>
+                <h1 id="a032021-injection">A03:2021 – Injection    <img align="right" alt="icon" src="../assets/TOP_10_Icons_Final_Injection.png" style="height:80px;width:80px" /><a class="headerlink" href="#a032021-injection" title="Permanent link">⚓︎</a></h1>
+<h2 id="factors">Factors<a class="headerlink" href="#factors" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -794,12 +794,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="overview">Overview</h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⚓︎</a></h2>
 <p>Injection slides down to the third position. 94% of the applications
 were tested for some form of injection with a max incidence rate of 19%, an average incidence rate of 3%, and 274k occurances. Notable Common Weakness Enumerations (CWEs) included are
 <em>CWE-79: Cross-site Scripting</em>, <em>CWE-89: SQL Injection</em>, and <em>CWE-73:
 External Control of File Name or Path</em>.</p>
-<h2 id="description">Description</h2>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h2>
 <p>An application is vulnerable to attack when:</p>
 <ul>
 <li>
@@ -830,7 +830,7 @@ data inputs is strongly encouraged. Organizations can include
 static (SAST), dynamic (DAST), and interactive (IAST) application security testing tools into the CI/CD
 pipeline to identify introduced injection flaws before production
 deployment.</p>
-<h2 id="how-to-prevent">How to Prevent</h2>
+<h2 id="how-to-prevent">How to Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">⚓︎</a></h2>
 <p>Preventing injection requires keeping data separate from commands and queries:</p>
 <ul>
 <li>
@@ -858,24 +858,24 @@ deployment.</p>
     disclosure of records in case of SQL injection.</p>
 </li>
 </ul>
-<h2 id="example-attack-scenarios">Example Attack Scenarios</h2>
+<h2 id="example-attack-scenarios">Example Attack Scenarios<a class="headerlink" href="#example-attack-scenarios" title="Permanent link">⚓︎</a></h2>
 <p><strong>Scenario #1:</strong> An application uses untrusted data in the construction
-of the following vulnerable SQL call:</p>
-<pre><code>String query = &quot;SELECT \* FROM accounts WHERE custID='&quot; + request.getParameter(&quot;id&quot;) + &quot;'&quot;;
-</code></pre>
+of the following vulnerable SQL call:
+<div class="highlight"><pre><span></span><code>String query = &quot;SELECT \* FROM accounts WHERE custID=&#39;&quot; + request.getParameter(&quot;id&quot;) + &quot;&#39;&quot;;
+</code></pre></div></p>
 <p><strong>Scenario #2:</strong> Similarly, an application’s blind trust in frameworks
 may result in queries that are still vulnerable, (e.g., Hibernate Query
-Language (HQL)):</p>
-<pre><code> Query HQLQuery = session.createQuery(&quot;FROM accounts WHERE custID='&quot; + request.getParameter(&quot;id&quot;) + &quot;'&quot;);
-</code></pre>
+Language (HQL)):
+<div class="highlight"><pre><span></span><code> Query HQLQuery = session.createQuery(&quot;FROM accounts WHERE custID=&#39;&quot; + request.getParameter(&quot;id&quot;) + &quot;&#39;&quot;);
+</code></pre></div></p>
 <p>In both cases, the attacker modifies the ‘id’ parameter value in their
-browser to send: ‘ or ‘1’=’1. For example:</p>
-<pre><code> http://example.com/app/accountView?id=' or '1'='1
-</code></pre>
+browser to send: ‘ or ‘1’=’1. For example:
+<div class="highlight"><pre><span></span><code> http://example.com/app/accountView?id=&#39; or &#39;1&#39;=&#39;1
+</code></pre></div></p>
 <p>This changes the meaning of both queries to return all the records from
 the accounts table. More dangerous attacks could modify or delete data
 or even invoke stored procedures.</p>
-<h2 id="references">References</h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c3-secure-database">OWASP Proactive Controls: Secure Database Access</a></p>
@@ -906,7 +906,7 @@ or even invoke stored procedures.</p>
 <p><a href="https://portswigger.net/kb/issues/00101080_serversidetemplateinjection">PortSwigger: Server-side template injection</a></p>
 </li>
 </ul>
-<h2 id="list-of-mapped-cwes">List of Mapped CWEs</h2>
+<h2 id="list-of-mapped-cwes">List of Mapped CWEs<a class="headerlink" href="#list-of-mapped-cwes" title="Permanent link">⚓︎</a></h2>
 <p><a href="https://cwe.mitre.org/data/definitions/20.html">CWE-20 Improper Input Validation</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/74.html">CWE-74 Improper Neutralization of Special Elements in Output Used by a
 Downstream Component ('Injection')</a></p>
@@ -954,7 +954,7 @@ Downstream Component ('Injection')</a></p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-29
+      Last update: 2021-09-30
     
   </small>
 </div>

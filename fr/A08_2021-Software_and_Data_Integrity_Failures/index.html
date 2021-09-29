@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../ar/" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -764,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a082021-software-and-data-integrity-failures">A08:2021 – Software and Data Integrity Failures    <img align="right" alt="icon" src="../../assets/TOP_10_Icons_Final_Software_and_Data_Integrity_Failures.png" style="height:80px;width:80px" /></h1>
-<h2 id="factors">Factors</h2>
+                <h1 id="a082021-software-and-data-integrity-failures">A08:2021 – Software and Data Integrity Failures    <img align="right" alt="icon" src="../../assets/TOP_10_Icons_Final_Software_and_Data_Integrity_Failures.png" style="height:80px;width:80px" /><a class="headerlink" href="#a082021-software-and-data-integrity-failures" title="Permanent link">⚓︎</a></h1>
+<h2 id="factors">Factors<a class="headerlink" href="#factors" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -794,7 +794,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="overview">Overview</h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⚓︎</a></h2>
 <p>A new category for 2021 focuses on making assumptions related to
 software updates, critical data, and CI/CD pipelines without verifying
 integrity. One of the highest weighted impacts from 
@@ -803,7 +803,7 @@ data. Notable Common Weakness Enumerations (CWEs) include
 <em>CWE-829: Inclusion of Functionality from Untrusted Control Sphere</em>,
 <em>CWE-494: Download of Code Without Integrity Check</em>, and 
 <em>CWE-502: Deserialization of Untrusted Data</em>.</p>
-<h2 id="description">Description</h2>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h2>
 <p>Software and data integrity failures relate to code and infrastructure
 that does not protect against integrity violations. An example of this is where an application relies upon plugins, libraries, or modules from untrusted sources, repositories, and content
 delivery networks (CDNs). An insecure CI/CD pipeline can introduce the
@@ -815,7 +815,7 @@ potentially upload their own updates to be distributed and run on all
 installations. Another example is where
 objects or data are encoded or serialized into a structure that an
 attacker can see and modify is vulnerable to insecure deserialization.</p>
-<h2 id="how-to-prevent">How to Prevent</h2>
+<h2 id="how-to-prevent">How to Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p>Use digital signatures or similar mechanisms to verify the software or data is from the expected source and has not been altered.</p>
@@ -843,7 +843,7 @@ attacker can see and modify is vulnerable to insecure deserialization.</p>
     signature to detect tampering or replay of the serialized data</p>
 </li>
 </ul>
-<h2 id="example-attack-scenarios">Example Attack Scenarios</h2>
+<h2 id="example-attack-scenarios">Example Attack Scenarios<a class="headerlink" href="#example-attack-scenarios" title="Permanent link">⚓︎</a></h2>
 <p><strong>Scenario #1 Update without signing:</strong> Many home routers, set-top
 boxes, device firmware, and others do not verify updates via signed
 firmware. Unsigned firmware is a growing target for attackers and is
@@ -865,7 +865,7 @@ with is serializing the user state and passing it back and forth with
 each request. An attacker notices the "rO0" Java object signature (in base64) and
 uses the Java Serial Killer tool to gain remote code execution on the
 application server.</p>
-<h2 id="references">References</h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p>[OWASP Cheat Sheet: Software Supply Chain Security](Coming Soon)</p>
@@ -894,7 +894,7 @@ application server.</p>
 <p><a href="https://www.manning.com/books/securing-devops">Securing DevOps by Julien Vehent</a></p>
 </li>
 </ul>
-<h2 id="list-of-mapped-cwes">List of Mapped CWEs</h2>
+<h2 id="list-of-mapped-cwes">List of Mapped CWEs<a class="headerlink" href="#list-of-mapped-cwes" title="Permanent link">⚓︎</a></h2>
 <p><a href="https://cwe.mitre.org/data/definitions/345.html">CWE-345 Insufficient Verification of Data Authenticity</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/353.html">CWE-353 Missing Support for Integrity Check</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/426.html">CWE-426 Untrusted Search Path</a></p>
@@ -913,7 +913,7 @@ application server.</p>
 <div class="md-source-date">
   <small>
     
-      Dernière mise à jour: 2021-09-29
+      Dernière mise à jour: 2021-09-30
     
   </small>
 </div>

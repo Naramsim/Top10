@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../fr/" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../zh_TW/" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../ar/" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -802,10 +802,10 @@
                   </a>
                 
                 
-                <h1 id="owasp-top-10-2021">OWASP Top 10 2021の紹介</h1>
+                <h1 id="owasp-top-10-2021">OWASP Top 10 2021の紹介<a class="headerlink" href="#owasp-top-10-2021" title="Permanent link">⚓︎</a></h1>
 <p>OWASP トップ 10 の最新版へようこそ! OWASP トップ 10 2021年版は、グラフィックデザインが一新され、1ページのインフォグラフィックになっています。インフォグラフィックは、ホームページから入手でき、印刷することができます。</p>
 <p>今回のトップ10の作成にあたって、貴重な時間やデータを提供してくださったすべての皆さんに感謝します。皆様のご協力なくしては、OWASP トップ 10 2021年版は存在し得ません。<strong>本当に、感謝いたします</strong>。</p>
-<h2 id="202110">2021年版トップ10の変更点</h2>
+<h2 id="202110">2021年版トップ10の変更点<a class="headerlink" href="#202110" title="Permanent link">⚓︎</a></h2>
 <p>2021年版トップ10では、3つの新しいカテゴリー、4つのカテゴリーの名称とスコープの変更がありました。統合されたものもいくつかあります。</p>
 <p><img src="./assets/image1.png" style="width:6.5in;height:1.78889in" alt="Mapping of the relationship between the Top 10 2017 and the new Top 10 2021" /></p>
 <p><strong>A01:2021-アクセス制御の不備</strong> は、5位から順位を上げました。94%のアプリケーションで、何らかの形でアクセス制御の不備が確認されています。また、「アクセス制御の欠陥」にあたる34件のCWEは、他のカテゴリーよりもアプリケーションで多く発生しています。</p>
@@ -819,10 +819,10 @@
 <p><strong>A08:2021-ソフトウェアとデータの整合性の不具合</strong> これは2021年に新設されたカテゴリーで、ソフトウェアの更新、重要なデータを、CI/CDパイプラインにおいて整合性を検証せずに見込みで進めることによる問題にフォーカスしています。CVE/CVSSのデータから最も重大な影響を受けたものの1つが、このカテゴリーの10のCWEにマッピングされています。2017年の「安全でないデシリアライゼーション」は、このカテゴリーの一部となりました。</p>
 <p><strong>A09:2021-セキュリティログとモニタリングの失敗</strong>  は、従来は「ロギングとモニタリングの不足」でしたが、業界の調査（第3位）から追加され、従来の第10位からランクアップしました。このカテゴリは、より多くの種類の失敗を含むように拡張されています。これは、テストが困難なものであり、かつ、CVE/CVSSのデータにはあまり反映されないものです。とはいえ、このカテゴリーで失敗が起きると、可視性、インシデントアラート、フォレンジックなどに直接影響を与える可能性があります。</p>
 <p><strong>A10:2021-サーバーサイド・リクエスト・フォージェリ</strong> は、業界の調査（第1位）から追加されたものです。調査データからわかることは、よくあるテストより広範な範囲において、問題の発生率は比較的低いものの、問題が起きた場合のエクスプロイトとインパクトは平均以上のものとなり得ます。このカテゴリは、現時点でデータとして現れるものではありませんでしたが、複数の業界の専門家により重要との示唆を得たシナリオとして反映しています。</p>
-<h2 id="_1">方法論</h2>
+<h2 id="_1">方法論<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <p>今回のトップ10は、これまで以上にデータを重視していますが、やみくもにデータを重視しているわけではありません。10項目のうち8項目は提供されたデータから、2項目は業界調査から高いレベルで選びました。こうすることにはひとつの根本的な理由があります。提供されたデータを見ることは、過去を見ることを意味している、ということです。アプリケーションセキュリティのリサーチャーが新しい脆弱性や、それをテストする新しい方法を見つけるのには時間がかかります。これらのテストをツールやプロセスに組み込むには時間がかかります。こうした弱点を広く確実にテストできるようになるまでには、何年もかかってしまうことでしょう。そこで、データではわからないような本質的な弱点は何かということについては、業界の第一線で活躍されている方々にお聞きすることでバランスをとる、というわけです。</p>
 <p>トップ10を継続的に成熟させるために私たちが採用した、重要な変更点がいくつかあります。</p>
-<h3 id="how-the-categories-are-structured">How the categories are structured</h3>
+<h3 id="how-the-categories-are-structured">How the categories are structured<a class="headerlink" href="#how-the-categories-are-structured" title="Permanent link">⚓︎</a></h3>
 <p>A few categories have changed from the previous installment of the OWASP
 Top Ten. Here is a high-level summary of the category changes.</p>
 <p>Previous data collection efforts were focused on a prescribed subset of
@@ -858,7 +858,7 @@ this installment, with the lower bounds at 1 CWE for
 <em>A04:2021-Insecure Design</em>. This updated category structure offers
 additional training benefits as companies can focus on CWEs that make
 sense for a language/framework.</p>
-<h3 id="how-the-data-is-used-for-selecting-categories">How the data is used for selecting categories</h3>
+<h3 id="how-the-data-is-used-for-selecting-categories">How the data is used for selecting categories<a class="headerlink" href="#how-the-data-is-used-for-selecting-categories" title="Permanent link">⚓︎</a></h3>
 <p>In 2017, we selected categories by incidence rate to determine
 likelihood, then ranked them by team discussion based on decades of
 experience for Exploitability, Detectability (also likelihood), and
@@ -887,7 +887,7 @@ population that had CVSSv3 + the remaining population of CVSSv2 scores
 to get an overall average. We mapped these averages to the CWEs in the
 dataset to use as Exploit and Impact scoring for the other half of the
 risk equation.</p>
-<h2 id="why-not-just-pure-statistical-data">Why not just pure statistical data?</h2>
+<h2 id="why-not-just-pure-statistical-data">Why not just pure statistical data?<a class="headerlink" href="#why-not-just-pure-statistical-data" title="Permanent link">⚓︎</a></h2>
 <p>The results in the data are primarily limited to what we can test for in
 an automated fashion. Talk to a seasoned AppSec professional, and they
 will tell you about stuff they find and trends they see that aren't yet
@@ -901,7 +901,7 @@ it's incomplete. The other two categories are from the industry survey.
 It allows the practitioners on the front lines to vote for what they see
 as the highest risks that might not be in the data (and may never be
 expressed in data).</p>
-<h2 id="why-incidence-rate-instead-of-frequency">Why incidence rate instead of frequency?</h2>
+<h2 id="why-incidence-rate-instead-of-frequency">Why incidence rate instead of frequency?<a class="headerlink" href="#why-incidence-rate-instead-of-frequency" title="Permanent link">⚓︎</a></h2>
 <p>There are three primary sources of data. We identify them as
 Human-assisted Tooling (HaT), Tool-assisted Human (TaH), and raw
 Tooling.</p>
@@ -935,7 +935,7 @@ one-off or systemic. That's irrelevant for our purposes; we just need to
 know how many applications had at least one instance, which helps
 provide a clearer view of the testing is findings across multiple
 testing types without drowning the data in high-frequency results.</p>
-<h2 id="what-is-your-data-collection-and-analysis-process">What is your data collection and analysis process?</h2>
+<h2 id="what-is-your-data-collection-and-analysis-process">What is your data collection and analysis process?<a class="headerlink" href="#what-is-your-data-collection-and-analysis-process" title="Permanent link">⚓︎</a></h2>
 <p>We formalized the OWASP Top 10 data collection process at the Open
 Security Summit in 2017. OWASP Top 10 leaders and the community spent
 two days working out formalizing a transparent data collection process.
@@ -963,7 +963,7 @@ that aren't already present in the data will be selected for the other
 two places in the Top 10. Once all ten were selected, we applied
 generalized factors for exploitability and impact; to help rank the Top
 10 in order.</p>
-<h2 id="data-factors">Data Factors</h2>
+<h2 id="data-factors">Data Factors<a class="headerlink" href="#data-factors" title="Permanent link">⚓︎</a></h2>
 <p>There are data factors that are listed for each of the Top 10
 Categories, here is what they mean:</p>
 <ul>
@@ -999,7 +999,7 @@ Categories, here is what they mean:</p>
     the CWEs mapped to a category.</p>
 </li>
 </ul>
-<h2 id="category-relationships-from-2017">Category Relationships from 2017</h2>
+<h2 id="category-relationships-from-2017">Category Relationships from 2017<a class="headerlink" href="#category-relationships-from-2017" title="Permanent link">⚓︎</a></h2>
 <p>There has been a lot of talk about the overlap between the Top Ten
 risks. By the definition of each (list of CWEs included), there really
 isn't any overlap. However, conceptually, there can be overlap or
@@ -1034,7 +1034,7 @@ became obvious:</p>
     representing first-party risks.</p>
 </li>
 </ol>
-<h1 id="thank-you-to-our-data-contributors">Thank you to our data contributors</h1>
+<h1 id="thank-you-to-our-data-contributors">Thank you to our data contributors<a class="headerlink" href="#thank-you-to-our-data-contributors" title="Permanent link">⚓︎</a></h1>
 <p>The following organizations (along with some anonymous donors) kindly
 donated data for over 500,000 applications to make this the largest and
 most comprehensive application security data set. Without you, this
@@ -1077,7 +1077,7 @@ would not be possible.</p>
 <div class="md-source-date">
   <small>
     
-      最終更新日: 2021-09-29
+      最終更新日: 2021-09-30
     
   </small>
 </div>

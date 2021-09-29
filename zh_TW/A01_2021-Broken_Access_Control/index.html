@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../fr/" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../ar/" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -764,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a012021">A01:2021 – 權限控制失效</h1>
-<h2 id="_1">對照因素</h2>
+                <h1 id="a012021">A01:2021 – 權限控制失效<a class="headerlink" href="#a012021" title="Permanent link">⚓︎</a></h1>
+<h2 id="_1">對照因素<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -794,9 +794,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_2">概述</h2>
+<h2 id="_2">概述<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <p>從第五名晋升至第一名，94% 的應用程式都對中斷的存取控制進行了某種形式的測試。著名的CWE包括 <em>CWE-200：將敏感資訊暴露給未經授權的行為者</em>，<em>CWE-201：通過發送資料</em> 和 <em>CWE-352曝露敏感資訊：跨站請求偽造</em>。</p>
-<h2 id="_3">描述</h2>
+<h2 id="_3">描述<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <p>存取控制強化政策，使得用戶不能採取在預期權限之外的行動。故障通常會導致未經授權的資訊洩露、修改或破壞所有資料，或執行超出用戶限制的業務功能。常見的存取控制弱點包括：</p>
 <ul>
 <li>
@@ -818,7 +818,7 @@
 <p>以未經身份驗證的用戶身份強制瀏覽已驗證的頁面或以標準用戶身份存取特權頁面。存取缺少存取控制的API以進行POST、PUT 和 DELETE操作。</p>
 </li>
 </ul>
-<h2 id="_4">如何預防</h2>
+<h2 id="_4">如何預防<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
 <p>存取控制僅在受信任的伺服器端代碼或無伺服器的API有效果，攻擊者無法修改這裏的存取控制檢查或中繼資料。</p>
 <ul>
 <li>
@@ -847,7 +847,7 @@
 </li>
 </ul>
 <p>開發人員和QA品保人員應納入與功能有關之存取控制的單元和整合測試。</p>
-<h2 id="_5">攻擊情境範例</h2>
+<h2 id="_5">攻擊情境範例<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h2>
 <p><strong>情境 #1：</strong> 應用程式在存取帳戶資訊的SQL呼叫中使用未經驗證的資料：</p>
 <blockquote>
 <p>pstmt.setString(1, request.getParameter("acct"));</p>
@@ -861,7 +861,7 @@
 <p>https://example.com/app/admin_getappInfo</p>
 </blockquote>
 <p>如果未經身份驗證的用戶可以存取任一頁面，那就是一個缺陷。 如果一個非管理員可以存取管理頁面，這也是一個缺陷。</p>
-<h2 id="_6">參考</h2>
+<h2 id="_6">參考<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls">OWASP主動控制：實施存取控制</a></p>
@@ -879,7 +879,7 @@
 <p><a href="https://portswigger.net/blog/exploiting-cors-misconfigurations-for-bitcoins-and-bounties">PortSwigger：利用CORS的錯誤配置</a></p>
 </li>
 </ul>
-<h2 id="cwe">對應的CWE列表</h2>
+<h2 id="cwe">對應的CWE列表<a class="headerlink" href="#cwe" title="Permanent link">⚓︎</a></h2>
 <p>CWE-22 不當限制受限目錄的路徑名稱（路徑遍訪）</p>
 <p>CWE-23 相對路徑遍訪</p>
 <p>CWE-35 路徑遍訪: '.../...//'</p>
@@ -922,7 +922,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-29
+      Last update: 2021-09-30
     
   </small>
 </div>

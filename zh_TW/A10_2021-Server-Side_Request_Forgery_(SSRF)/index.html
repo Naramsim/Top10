@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../fr/" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../ar/" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -792,8 +792,8 @@
                   </a>
                 
                 
-                <h1 id="a102021-server-side-request-forgery-ssrf">A10:2021 – Server-Side Request Forgery (SSRF)</h1>
-<h2 id="factors">Factors</h2>
+                <h1 id="a102021-server-side-request-forgery-ssrf">A10:2021 – Server-Side Request Forgery (SSRF)<a class="headerlink" href="#a102021-server-side-request-forgery-ssrf" title="Permanent link">⚓︎</a></h1>
+<h2 id="factors">Factors<a class="headerlink" href="#factors" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -824,7 +824,7 @@
 </table>
 <p>| 可對照 CWEs 數量 | 最大發生率 | 平均發生率 |最大覆蓋範圍 | 平均覆蓋範圍 | 平均加權漏洞 | 平均加權影響 | 出現次數 | 所有相關 CVEs 數量 |
 | 1  | 2.72%  | 2.72%  | 67.72%  | 67.72%  | 8.28 | 6.72  | 9,503  | 385   |</p>
-<h2 id="overview">Overview (概覽)</h2>
+<h2 id="overview">Overview (概覽)<a class="headerlink" href="#overview" title="Permanent link">⚓︎</a></h2>
 <p>This category is added from the industry survey (#1). The data shows a
 relatively low incidence rate with above average testing coverage and
 above-average Exploit and Impact potential ratings. As new entries are
@@ -832,7 +832,7 @@ likely to be a single or small cluster of CWEs for attention and
 awareness, the hope is that they are subject to focus and can be rolled
 into a larger category in a future edition.
 這個類別是從產業調查結果加入至此的(#1)。資料顯示在測試覆蓋率高於平均水準以及利用(Exploit)和衝擊(Impact)潛力評等高於平均水準的情況下，此類別發生機率相對較低。因為新報到的類別有可能是在CWEs當中受到單一或小群關注的類別而已，因此我們希望此項目可以引來更多人關注，進而在未來版本變成一個較大的類別。</p>
-<h2 id="description">Description (說明)</h2>
+<h2 id="description">Description (說明)<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h2>
 <p>SSRF flaws occur whenever a web application is fetching a remote
 resource without validating the user-supplied URL. It allows an attacker
 to coerce the application to send a crafted request to an unexpected
@@ -844,11 +844,11 @@ fetching a URL becomes a common scenario. As a result, the incidence of
 SSRF is increasing. Also, the severity of SSRF is becoming higher due to
 cloud services and the complexity of architectures.
 (現今的網頁應用程式提供終端使用者便利的特色，取得網址已經是常見的了。因此，偽造伺服端請求的發生率是在增加當中的。而且，因為雲端服務和雲端結構的複雜性，偽造伺服端請求的嚴重性將會愈來愈嚴峻。)</p>
-<h2 id="how-to-prevent">How to Prevent (如何預防)</h2>
+<h2 id="how-to-prevent">How to Prevent (如何預防)<a class="headerlink" href="#how-to-prevent" title="Permanent link">⚓︎</a></h2>
 <p>Developers can prevent SSRF by implementing some or all the following
 defense in depth controls:
 (開發者可以預防偽造伺服端請求，透過實施下列一部分或全部的縱身防禦控制措施：)</p>
-<h2 id="from-network-layer"><strong>From Network layer</strong> (從網路層著手)</h2>
+<h2 id="from-network-layer"><strong>From Network layer</strong> (從網路層著手)<a class="headerlink" href="#from-network-layer" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p>Segment remote resource access functionality in separate networks to
@@ -859,7 +859,7 @@ defense in depth controls:
     control rules to block all but essential intranet traffic (於防火牆政策或於網路存取控制規則實施"預設全拒絕(deny by default)" ，以封鎖全部來自外部之網路流量)</p>
 </li>
 </ul>
-<h2 id="from-application-layer"><strong>From Application layer:</strong> (從應用層)</h2>
+<h2 id="from-application-layer"><strong>From Application layer:</strong> (從應用層)<a class="headerlink" href="#from-application-layer" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p>Sanitize and validate all client-supplied input data (過濾並驗證來自於用戶端提供之全部輸入)</p>
@@ -881,7 +881,7 @@ defense in depth controls:
 </ul>
 <p>Do not mitigate SSRF via the use of a deny list or regular expression.
 Attackers have payload lists, tools, and skills to bypass deny lists. (別透過拒絕清單或正規表示式來減緩偽造伺服端請求。攻擊者有 payload 清單、工具和技巧可以繞過這些拒絕清單。)</p>
-<h2 id="example-attack-scenarios">Example Attack Scenarios (攻擊情境範例)</h2>
+<h2 id="example-attack-scenarios">Example Attack Scenarios (攻擊情境範例)<a class="headerlink" href="#example-attack-scenarios" title="Permanent link">⚓︎</a></h2>
 <p>Attackers can use SSRF to attack systems protected behind web
 application firewalls, firewalls, or network ACLs, using scenarios such
 as:
@@ -903,7 +903,7 @@ attacker can read the metadata to gain sensitive information.
 internal services to conduct further attacks such as Remote Code
 Execution (RCE) or Denial of Service (DoS).
 (情境四：滲透內部服務 - 攻擊者可以濫用內部服務去執行更進一步的攻擊，例如RCE或Dos。</p>
-<h2 id="references">References</h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p><a href="https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html">OWASP - Server-Side Request Forgery Prevention Cheat
@@ -926,7 +926,7 @@ Execution (RCE) or Denial of Service (DoS).
     Languages!</a></p>
 </li>
 </ul>
-<h2 id="list-of-mapped-cwes">List of Mapped CWEs</h2>
+<h2 id="list-of-mapped-cwes">List of Mapped CWEs<a class="headerlink" href="#list-of-mapped-cwes" title="Permanent link">⚓︎</a></h2>
 <p>CWE-918 Server-Side Request Forgery (SSRF)</p>
                 
                   
@@ -936,7 +936,7 @@ Execution (RCE) or Denial of Service (DoS).
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-29
+      Last update: 2021-09-30
     
   </small>
 </div>

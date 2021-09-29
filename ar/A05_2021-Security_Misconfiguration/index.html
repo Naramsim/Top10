@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../fr/" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -764,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a052021">A05:2021 –  الإعدادات الأمنية الخاطئة</h1>
-<h2 id="_1">العوامل</h2>
+                <h1 id="a052021">A05:2021 –  الإعدادات الأمنية الخاطئة<a class="headerlink" href="#a052021" title="Permanent link">⚓︎</a></h1>
+<h2 id="_1">العوامل<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -794,9 +794,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_2">نظرة عامة</h2>
+<h2 id="_2">نظرة عامة<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <p>بعد أن كان هذا التهديد   في المرتبة السادسة في الإصدار السابق لعام 2017 الآن نجده في المرتبة الخامسة، حيث أنه تم إجراء اختبار على %90 من البرامج والتطبيقات للتأكد إن كانت تحتوي على أيّة أخطاء في طريقة الإعدادات والتكوين الصحيحة، فليس من المُستغرب انتقال هذا التهديد من المرتبة السادسة إلى الخامسة. كذلك تم ضم "XML External Entities XXE" لهذا النوع من الإعدادات والتكوين الخاطئة. تضمن الـ CWEs التالية CWE-16 (Configuration), CWE-611 (Improper Restriction of XML External Entity).</p>
-<h2 id="_3">الوصف</h2>
+<h2 id="_3">الوصف<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <p>من المحتمل ان يكون التطبيق ضعيف امنياً إذا احتوى على النقاط التالية:</p>
 <ul>
 <li>
@@ -825,7 +825,7 @@
 </li>
 </ul>
 <p>من دون امتلاك إجراءات مفهومة وقابلة للتكّرار للإعدادات الأمنية لتكوين البرنامج بما يتوافق مع الضوابط الأمنية، تُصبح الأنظمة في خطر عالي.</p>
-<h2 id="_4">كيفية الحماية منها</h2>
+<h2 id="_4">كيفية الحماية منها<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
 <p>يجب تطبيق آلية آمنة لتكوين البرامج أو الأجهزة، تشمل على:</p>
 <ul>
 <li>
@@ -850,12 +850,12 @@
 <p>تشغيل أدوات الفحص للتحقّق من فعاليّة التكوينات والإعدادات في جميع البيئات للكشف عن الإعدادات الخاطئة.</p>
 </li>
 </ul>
-<h2 id="_5">أمثلة على سيناريوهات الهجوم</h2>
+<h2 id="_5">أمثلة على سيناريوهات الهجوم<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h2>
 <p><strong>سيناريو #1:</strong> عندما يحتوي احد الخوادم على تطبيق من التطبيقات غير محدث وما يزال يُستخدم    في بيئة الإنتاج "Production Server" هذه العيّنات من التطبيقات قد تحتوي على ثغرات أمنية يمكن أن يستخدمها المهاجم في اختراق الخادم ، وبافتراض أن أحد هذه البرامج هي وحدة تحكّم لإدارة الخادم وتحتوي على الاعدادات الافتراضية والرقم السري الافتراضي، في هذه الحالة فإن المهاجم سوف يُسجّل الدخول باستخدام الرقم السري الافتراضي ويتحكّم بالخادم.</p>
 <p><strong>سيناريو #2:</strong> عندما تكون قائمة الدليل "Directory Listing" غير معطّلة في الخادم الخاص بك، قد يكتشف المهاجم أن بإمكانه سرد قائمة الملفات المخزنة على الخادم وبعد ذلك بإمكانه العثور وتثبيت جميع فئات جافا (Compiled Java Classes) ومن ثم يقوم بفكّها وتطبيق الهندسة العكسية لعرض الشّفرة المصدرية، سوف يحاول المهاجم بعد ذلك إيجاد خطأ أمني للتحكّم في الوصول إلى الخادم.</p>
 <p><strong>سيناريو #3:</strong> عندما تقوم إعدادات خادم التطبيق بإرجاع رسائل خاطئة تفصيليّة، على سبيل المثال Stack Traces إلى المستخدم، ومن المُحتمل أن يؤدي هذا إلى الكشف عن معلومات حساسة أو ثغرات أمنية أخرى أو معلومات مثل إصدارات المكونات المعروفة بأنها قابلة للاستغلال.  </p>
 <p><strong>سيناريو #4:</strong> أن يكون مقدّم الخدمة السحابيّة لديه أذونات مشاركة افتراضية مفتوحة على الإنترنت من قِبل مستخدمي CSP الآخرين، يسمح هذا بالوصول إلى البيانات الحساسة المخزّنة في سحابة التخزين.</p>
-<h2 id="_6">المصادر</h2>
+<h2 id="_6">المصادر<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README">OWASP Testing Guide: Configuration Management</a></p>
@@ -876,7 +876,7 @@
 <p><a href="https://blog.websecurify.com/2017/10/aws-s3-bucket-discovery.html">Amazon S3 Bucket Discovery and Enumeration</a></p>
 </li>
 </ul>
-<h2 id="cwes">قائمة الربط مع إطار CWEs</h2>
+<h2 id="cwes">قائمة الربط مع إطار CWEs<a class="headerlink" href="#cwes" title="Permanent link">⚓︎</a></h2>
 <p><a href="https://cwe.mitre.org/data/definitions/2.html">CWE-2 7PK - Environment</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/11.html">CWE-11 ASP.NET Misconfiguration: Creating Debug Binary</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/13.html">CWE-13 ASP.NET Misconfiguration: Password in Configuration File</a></p>
@@ -905,7 +905,7 @@
 <div class="md-source-date">
   <small>
     
-      اخر تحديث: 2021-09-29
+      اخر تحديث: 2021-09-30
     
   </small>
 </div>

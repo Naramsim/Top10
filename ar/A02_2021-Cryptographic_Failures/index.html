@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../fr/" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -764,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a022021">A02:2021 –  فشل آلية التشفير</h1>
-<h2 id="_1">العوامل</h2>
+                <h1 id="a022021">A02:2021 –  فشل آلية التشفير<a class="headerlink" href="#a022021" title="Permanent link">⚓︎</a></h1>
+<h2 id="_1">العوامل<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -794,9 +794,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_2">نظرة عامة</h2>
+<h2 id="_2">نظرة عامة<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <p>يأتي فشل آلية التشفير في المرتبة رقم #2 والتي كانت تعرف “بالبيانات الحساسة الغير محمية أو المكشوفة" والتي قد تكون أسبابها متعدّدة أكثر من كونها ناتجة عن سبب جذري واحد، ويأتي التركيز هنا على حالات الفشل في التشفير والتي غالبًا ما تؤدي إلى كشف غير مصرّح به للبيانات الحساسة. تم ملاحظة أن نقاط الضعف الشائعة CWEs تشمل: CWE-259: استخدام كلمة المرور المضمنة مسبقًا ""  ، CWE-327: خوارزمية تشفير مُعطّلة أو محفوفة بالمخاطر، و CWE-331 التشتت الغير فعّال أو بعبارة أخرى -عشوائية بشكل غير كافي-” Insufficient Entropy”.</p>
-<h2 id="_3">الوصف</h2>
+<h2 id="_3">الوصف<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <p>أولًا، تحديد احتياجات حماية <strong>البيانات أثناء النقل</strong> (Data in transit) وأثناء التخزين (Data at rest). على سبيل المثال، تتطلّب كل من (كلمات المرور وأرقام بطاقات الائتمان والسجلات الصحيّة والمعلومات الشخصية وأسرار العمل) تتطلّب حماية إضافية ولا سيّما إذا كانت تلك البيانات تندرج تحت قوانين الخصوصية مثل اللائحة العامة لحماية البيانات في الاتحاد الأوروبي (GDPR)، أو التنظيمات، و على سبيل المثال تنظيمات حماية البيانات المالية مثل معيار PCI لأمان البيانات أو معيار (PCI DSS) لجميع البيانات المالية.</p>
 <ul>
 <li>
@@ -816,7 +816,7 @@
 </li>
 </ul>
 <p>هناك الكثير من المشاكل التي يجب تجنّبها، انظر ASVS Crypto (V7) , Data Protection (V9), and SSL/TLS (V10)</p>
-<h2 id="_4">كيفية الحماية منها</h2>
+<h2 id="_4">كيفية الحماية منها<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
 <p>يجب عمل ما يلي على الأقل لحماية البيانات الحساسة:</p>
 <ul>
 <li>
@@ -847,11 +847,11 @@
 <p>تحقق بشكل مستقل من فعالية التكوين والإعدادات.</p>
 </li>
 </ul>
-<h2 id="_5">أمثلة على سيناريوهات الهجوم</h2>
+<h2 id="_5">أمثلة على سيناريوهات الهجوم<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h2>
 <p><strong>سيناريو #1</strong>: تطبيق يقوم بتشفير أرقام البطاقات الائتمانية باستخدام التشفير الآلي المتوفر مع قاعدة البيانات. لكن هذا يعني أنه بإمكان قاعدة البيانات فكّ التشفير آليًا عند طلب البيانات منها، مما قد يُعرّض أرقام البطاقات الائتمانية للسّرقة عند استغلال ثغرة حقن "SQL”، لذلك، يجب تشفير أرقام البطاقات الائتمانية باستخدام مفتاح عام "Public Key" والسماح فقط للبنية التحتية للتطبيق بفكّ التشفير باستخدام المفتاح الخاص "Private Key".</p>
 <p><strong>سيناريو #2</strong>:الموقع الذي لا يستخدم بروتوكول TLS لكافة الصفحات أو أن الموقع يدعم التشفير الضعيف، حيث يراقب المهاجم حركة مرور البيانات في الشبكة (على سبيل المثال، في الشبكات اللاسلكية الغير آمنة) ينخفض مستوى الاتصال من HTTPS إلى HTTP، ويعترض الطلبات و يستطيع السطو على <strong>بيانات جلسات الاتصالات</strong> "Session Cookie" للمستخدم، ثم يعيد المهاجم إرسال واستخدام بيانات جلسة اتصال المستخدم ( التي سبق و تم المصادقة عليها) فيتمكن من الوصول إلى بيانات المستخدم الخاصة أو تعديلها و يمكن استبدالها مما يؤدي إلى تغيير أي من البيانات المنقولة، مثل الجهة المتلقية لتحويل الأموال.</p>
 <p><strong>سيناريو #3</strong>: قاعدة بيانات كلمات المرور لا تستخدم بيانات عشوائية إضافية "salted “أو إضافة بيانات عشوائية ذات نمط بسيط غير عشوائي بالقدر الكافي  استخدام <strong>دوال اختزال غير مُضاف لها بيانات عشوائية</strong> "unsalted hashes " لتخزين كلمات مرور جميع المستخدمين. عندما توجد ثغرة في خاصية رفع الملفات والتي تسمح للمهاجم باستعادة وتحميل قاعدة بيانات كلمات المرور. و بالتالي تتعرّض جميع كلمات المرور التي تم الكشف عنها لكسر حماية خوارزمياتها باستخدام جداول تحتوي على كلمات سرية مُعدّة مسبقًا "rainbow table of pre-calculated hashes". قد يتم كسر الـ"hashes" التي تم إنشاؤها بشكل بسيط وسريع، في حال استخدمت بطاقات المعالجة الرسومية"GPUs" حتى وإن تم إضافة بيانات عشوائية "salt".</p>
-<h2 id="_6">المصادر</h2>
+<h2 id="_6">المصادر<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere">OWASP Proactive Controls: Protect Data
@@ -880,7 +880,7 @@
 <p>OWASP Testing Guide: Testing for weak cryptography</p>
 </li>
 </ul>
-<h2 id="cwes">قائمة الربط مع إطار CWEs</h2>
+<h2 id="cwes">قائمة الربط مع إطار CWEs<a class="headerlink" href="#cwes" title="Permanent link">⚓︎</a></h2>
 <p>CWE-261 Weak Encoding for Password</p>
 <p>CWE-296 Improper Following of a Certificate's Chain of Trust</p>
 <p>CWE-310 Cryptographic Issues</p>
@@ -921,7 +921,7 @@
 <div class="md-source-date">
   <small>
     
-      اخر تحديث: 2021-09-29
+      اخر تحديث: 2021-09-30
     
   </small>
 </div>

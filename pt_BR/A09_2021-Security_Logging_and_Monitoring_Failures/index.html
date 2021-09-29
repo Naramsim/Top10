@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../fr/" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../ar/" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -764,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a092021-security-logging-and-monitoring-failures">A09:2021 – Security Logging and Monitoring Failures    <img align="right" alt="icon" src="../../assets/TOP_10_Icons_Final_Security_Logging_and_Monitoring_Failures.png" style="height:80px;width:80px" /></h1>
-<h2 id="factors">Factors</h2>
+                <h1 id="a092021-security-logging-and-monitoring-failures">A09:2021 – Security Logging and Monitoring Failures    <img align="right" alt="icon" src="../../assets/TOP_10_Icons_Final_Security_Logging_and_Monitoring_Failures.png" style="height:80px;width:80px" /><a class="headerlink" href="#a092021-security-logging-and-monitoring-failures" title="Permanent link">⚓︎</a></h1>
+<h2 id="factors">Factors<a class="headerlink" href="#factors" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -794,7 +794,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="overview">Overview</h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⚓︎</a></h2>
 <p>Security logging and monitoring came from the Top 10 community survey (#3), up
 slightly from the tenth position in the OWASP Top 10 2017. Logging and
 monitoring can be challenging to test, often involving interviews or
@@ -805,7 +805,7 @@ incident alerting, and forensics. This category expands beyond <em>CWE-778
 Insufficient Logging</em> to include <em>CWE-117 Improper Output Neutralization
 for Logs</em>, <em>CWE-223 Omission of Security-relevant Information</em>, and
 <em>CWE-532</em> <em>Insertion of Sensitive Information into Log File</em>.</p>
-<h2 id="description">Description</h2>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h2>
 <p>Returning to the OWASP Top 10 2021, this category is to help detect,
 escalate, and respond to active breaches. Without logging and
 monitoring, breaches cannot be detected. Insufficient logging,
@@ -841,7 +841,7 @@ detection, monitoring, and active response occurs any time:</p>
 </ul>
 <p>You are vulnerable to information leakage by making logging and alerting
 events visible to a user or an attacker (see <a href="../A01_2021-Broken_Access_Control/">A01:2021-Broken Access Control</a>).</p>
-<h2 id="how-to-prevent">How to Prevent</h2>
+<h2 id="how-to-prevent">How to Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">⚓︎</a></h2>
 <p>Developers should implement some or all the following controls, 
 depending on the risk of the application:</p>
 <ul>
@@ -878,7 +878,7 @@ depending on the risk of the application:</p>
 such as the OWASP ModSecurity Core Rule Set, and open-source log
 correlation software, such as the Elasticsearch, Logstash, Kibana (ELK)
 stack, that feature custom dashboards and alerting.</p>
-<h2 id="example-attack-scenarios">Example Attack Scenarios</h2>
+<h2 id="example-attack-scenarios">Example Attack Scenarios<a class="headerlink" href="#example-attack-scenarios" title="Permanent link">⚓︎</a></h2>
 <p><strong>Scenario #1:</strong> A childrens' health plan provider's website operator
 couldn't detect a breach due to a lack of monitoring and logging. An
 external party informed the health plan provider that an attacker had
@@ -897,7 +897,7 @@ breach. The breach was reportedly caused by payment application security
 vulnerabilities exploited by attackers, who harvested more than 400,000
 customer payment records. The airline was fined 20 million pounds as a
 result by the privacy regulator.</p>
-<h2 id="references">References</h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c9-security-logging.html">OWASP Proactive Controls: Implement Logging and
@@ -930,7 +930,7 @@ result by the privacy regulator.</p>
     Events</a></p>
 </li>
 </ul>
-<h2 id="list-of-mapped-cwes">List of Mapped CWEs</h2>
+<h2 id="list-of-mapped-cwes">List of Mapped CWEs<a class="headerlink" href="#list-of-mapped-cwes" title="Permanent link">⚓︎</a></h2>
 <p><a href="https://cwe.mitre.org/data/definitions/117.html">CWE-117 Improper Output Neutralization for Logs</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/223.html">CWE-223 Omission of Security-relevant Information</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/532.html">CWE-532 Insertion of Sensitive Information into Log File</a></p>
@@ -943,7 +943,7 @@ result by the privacy regulator.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-29
+      Last update: 2021-09-30
     
   </small>
 </div>

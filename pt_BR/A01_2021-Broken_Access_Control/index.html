@@ -166,26 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../fr/" hreflang="fr" class="md-select__link">
-                    Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
-                    繁體中文
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
                   <a href="../../it/" hreflang="it" class="md-select__link">
                     Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -196,8 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../ar/" hreflang="ar" class="md-select__link">
                     العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -764,8 +764,8 @@
                   </a>
                 
                 
-                <h1 id="a012021-quebra-de-controle-de-acesso">A01:2021 – Quebra de Controle de Acesso    <img align="right" alt="icon" src="../../assets/TOP_10_Icons_Final_Broken_Access_Control.png" style="height:80px;width:80px" /></h1>
-<h2 id="fatores">Fatores</h2>
+                <h1 id="a012021-quebra-de-controle-de-acesso">A01:2021 – Quebra de Controle de Acesso    <img align="right" alt="icon" src="../../assets/TOP_10_Icons_Final_Broken_Access_Control.png" style="height:80px;width:80px" /><a class="headerlink" href="#a012021-quebra-de-controle-de-acesso" title="Permanent link">⚓︎</a></h1>
+<h2 id="fatores">Fatores<a class="headerlink" href="#fatores" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
 <tr>
@@ -794,7 +794,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="visao-geral">Visão Geral</h2>
+<h2 id="visao-geral">Visão Geral<a class="headerlink" href="#visao-geral" title="Permanent link">⚓︎</a></h2>
 <p>Saindo da quinta posição, 94% dos aplicativos foram testados para
 alguma forma de controle de acesso quebrado com a taxa de incidência média
 de 3,81% e tem o maior número de ocorrências no conjunto de dados contribuído
@@ -802,7 +802,7 @@ com mais de 318 mil. Notável <em>Common Weakness Enumerations</em> (CWEs) inclu
 <em>CWE-200: Exposição de Informações Confidenciais a um Ator Não Autorizado</em>, <em>CWE-201:
 Exposição de Informações Confidenciais por meio de Dados Enviados</em> e <em>CWE-352:
 requisições forjadas entre sites</em>.</p>
-<h2 id="descricao">Descrição</h2>
+<h2 id="descricao">Descrição<a class="headerlink" href="#descricao" title="Permanent link">⚓︎</a></h2>
 <p>O controle de acesso impõe a política de modo que os usuários não possam
 agir fora de suas permissões pretendidas. As falhas normalmente levam
 à divulgação, modificação ou destruição de informações não autorizadas
@@ -846,7 +846,7 @@ limites do usuário. Vulnerabilidades comuns de controle de acesso incluem:</p>
     autenticado ou para páginas privilegiadas como um usuário padrão.</p>
 </li>
 </ul>
-<h2 id="como-prevenir">Como Prevenir</h2>
+<h2 id="como-prevenir">Como Prevenir<a class="headerlink" href="#como-prevenir" title="Permanent link">⚓︎</a></h2>
 <p>O controle de acesso só é eficaz em código confiável do lado do servidor ou API sem servidor,
 em que o invasor não pode modificar a verificação de controle de acesso ou metadados.</p>
 <ul>
@@ -887,25 +887,25 @@ em que o invasor não pode modificar a verificação de controle de acesso ou me
 </ul>
 <p>Os desenvolvedores e a equipe de QA devem incluir uma unidade de controle de
 acesso funcional e testes de integração.</p>
-<h2 id="exemplos-de-cenarios-de-ataque">Exemplos de Cenários de Ataque</h2>
+<h2 id="exemplos-de-cenarios-de-ataque">Exemplos de Cenários de Ataque<a class="headerlink" href="#exemplos-de-cenarios-de-ataque" title="Permanent link">⚓︎</a></h2>
 <p><strong>Cenário #1:</strong> O aplicativo usa dados não verificados em uma chamada SQL que
 está acessando informações da conta:</p>
-<pre><code> pstmt.setString(1, request.getParameter(&quot;acct&quot;));
+<div class="highlight"><pre><span></span><code> pstmt.setString(1, request.getParameter(&quot;acct&quot;));
  ResultSet results = pstmt.executeQuery( );
-</code></pre>
+</code></pre></div>
 <p>Um invasor simplesmente modifica o parâmetro 'acct' do navegador para enviar
 o número de conta que desejar. Se não for verificado corretamente, o invasor
 pode acessar a conta de qualquer usuário.</p>
-<pre><code> https://example.com/app/accountInfo?acct=notmyacct
-</code></pre>
+<div class="highlight"><pre><span></span><code> https://example.com/app/accountInfo?acct=notmyacct
+</code></pre></div>
 <p><strong>Cenário #2:</strong> Um invasor simplesmente força a navegação para URLs de destino.
 Direitos de administrador são necessários para acessar a página de administrador.</p>
-<pre><code> https://example.com/app/getappInfo
+<p><div class="highlight"><pre><span></span><code> https://example.com/app/getappInfo
  https://example.com/app/admin_getappInfo
-</code></pre>
-<p>Se um usuário não autenticado pode acessar qualquer página, é uma falha.
+</code></pre></div>
+Se um usuário não autenticado pode acessar qualquer página, é uma falha.
 Se um não administrador pode acessar a página de administração, isso é uma falha.</p>
-<h2 id="referencias">Referências</h2>
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>
 <p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls">OWASP Proactive Controls: Enforce Access
@@ -933,7 +933,7 @@ Se um não administrador pode acessar a página de administração, isso é uma 
 <p><a href="https://www.oauth.com/oauth2-servers/listing-authorizations/revoking-access/">OAuth: Revoking Access</a></p>
 </li>
 </ul>
-<h2 id="lista-dos-cwes-mapeados">Lista dos CWEs Mapeados</h2>
+<h2 id="lista-dos-cwes-mapeados">Lista dos CWEs Mapeados<a class="headerlink" href="#lista-dos-cwes-mapeados" title="Permanent link">⚓︎</a></h2>
 <p><a href="https://cwe.mitre.org/data/definitions/22.html">CWE-22 Improper Limitation of a Pathname to a Restricted Directory
 ('Path Traversal')</a></p>
 <p><a href="https://cwe.mitre.org/data/definitions/23.html">CWE-23 Relative Path Traversal</a></p>
@@ -977,7 +977,7 @@ Se um não administrador pode acessar a página de administração, isso é uma 
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-29
+      Last update: 2021-09-30
     
   </small>
 </div>
