@@ -12,7 +12,7 @@
       
       
       <link rel="icon" href="../../assets/OWASP-logo.svg">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.1">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.2">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1c75ef36.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.24c991ad.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#a01-2021-controllo-accessi-rotto" class="md-skip">
+        <a href="#a012021-broken-access-control" class="md-skip">
           Vai al contenuto
         </a>
       
@@ -160,44 +160,44 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../" hreflang="en" class="md-select__link">
+                  <a href="../../A01_2021-Broken_Access_Control/" hreflang="en" class="md-select__link">
                     English
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../" hreflang="it" class="md-select__link">
+                  <a href="./" hreflang="it" class="md-select__link">
                     Italiano
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                  <a href="../../pt_BR/A01_2021-Broken_Access_Control/" hreflang="pt_BR" class="md-select__link">
                     Português (Brasil)
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../zh_TW/" hreflang="zh_TW" class="md-select__link">
+                  <a href="../../ar/A01_2021-Broken_Access_Control/" hreflang="ar" class="md-select__link">
+                    العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../zh_TW/A01_2021-Broken_Access_Control/" hreflang="zh_TW" class="md-select__link">
                     繁體中文
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../ja/" hreflang="ja" class="md-select__link">
+                  <a href="../../ja/A01_2021-Broken_Access_Control/" hreflang="ja" class="md-select__link">
                     日本語
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../fr/" hreflang="fr" class="md-select__link">
+                  <a href="../../fr/A01_2021-Broken_Access_Control/" hreflang="fr" class="md-select__link">
                     Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../ar/" hreflang="ar" class="md-select__link">
-                    العربية
                   </a>
                 </li>
                 
@@ -475,6 +475,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#panoramica" class="md-nav__link">
+    Panoramica
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descrizione" class="md-nav__link">
+    Descrizione
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#come-prevenirla" class="md-nav__link">
+    Come prevenirla
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esempi-di-scenari-dattacco" class="md-nav__link">
+    Esempi di scenari d'attacco
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riferimenti" class="md-nav__link">
+    Riferimenti
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-dei-cwes-correlati" class="md-nav__link">
+    Lista dei CWEs correlati
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -663,6 +705,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#panoramica" class="md-nav__link">
+    Panoramica
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descrizione" class="md-nav__link">
+    Descrizione
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#come-prevenirla" class="md-nav__link">
+    Come prevenirla
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esempi-di-scenari-dattacco" class="md-nav__link">
+    Esempi di scenari d'attacco
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riferimenti" class="md-nav__link">
+    Riferimenti
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-dei-cwes-correlati" class="md-nav__link">
+    Lista dei CWEs correlati
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -680,9 +764,199 @@
                   </a>
                 
                 
-                <h1 id="a01-2021-controllo-accessi-rotto">A01 2021 Controllo Accessi Rotto<a class="headerlink" href="#a01-2021-controllo-accessi-rotto" title="Permanent link">⚓︎</a></h1>
+                <h1 id="a012021-broken-access-control">A01:2021 – Broken Access Control    <img align="right" alt="icon" src="../../assets/TOP_10_Icons_Final_Broken_Access_Control.png" style="height:80px;width:80px" /><a class="headerlink" href="#a012021-broken-access-control" title="Permanent link">⚓︎</a></h1>
 <h2 id="fattori">Fattori<a class="headerlink" href="#fattori" title="Permanent link">⚓︎</a></h2>
-<p>Bla bla, testo in Italiano</p>
+<table>
+<thead>
+<tr>
+<th align="center">CWEs corrispondenti</th>
+<th align="center">Tasso di incidenza Max</th>
+<th align="center">Tasso di incidenza Medio</th>
+<th align="center">Sfruttabilità pesata</th>
+<th align="center">Impatto Medio</th>
+<th align="center">Copertura Max</th>
+<th align="center">Copertura media</th>
+<th align="center">Occorrenze Totali</th>
+<th align="center">CVE Totali</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">34</td>
+<td align="center">55.97%</td>
+<td align="center">3.81%</td>
+<td align="center">6.92</td>
+<td align="center">5.93</td>
+<td align="center">94.55%</td>
+<td align="center">47.72%</td>
+<td align="center">318,487</td>
+<td align="center">19,013</td>
+</tr>
+</tbody>
+</table>
+<h2 id="panoramica">Panoramica<a class="headerlink" href="#panoramica" title="Permanent link">⚓︎</a></h2>
+<p>Salendo dalla quinta posizione, il 94% delle applicazioni è stato testato per
+una qualche forma di broken access control con un tasso medio di incidenza del 3,81%, e ha il maggior numero di occorrenze nel dataset con oltre 318k. Le Common Weakness Enumerations (CWE) incluse sono <em>CWE-200: Exposure of Sensitive Information to an Unauthorized Actor</em>, <em>CWE-201: Exposure of Sensitive Information Through Sent Data</em>, e <em>CWE-352: Cross-Site Request Forgery</em>.</p>
+<h2 id="descrizione">Descrizione<a class="headerlink" href="#descrizione" title="Permanent link">⚓︎</a></h2>
+<p>Il controllo degli accessi fa rispettare la policy in modo che gli utenti non possano agire al di fuori dei
+permessi previsti. Problematiche su questo tipo di controllo tipicamente portano alla divulgazione non autorizzata di
+informazioni, alla modifica o alla distruzione di tutti i dati o l'esecuzione di una funzione di business al di fuori dei limiti dell'utente. Le vulnerabilità più comuni che affliggono i meccanismi di controllo degli accessi includono:</p>
+<ul>
+<li>
+<p>Violazione del principio del minimo privilegio o deny by default,
+  dove l'accesso dovrebbe essere concesso solo per particolari capabilities,
+  ruoli o utenti, ma è disponibile a chiunque.</p>
+</li>
+<li>
+<p>Bypassare i controlli di accesso modificando l'URL (modifica dei parametri o
+  navigazione forzata), lo stato interno dell'applicazione o la
+  pagina HTML, o utilizzando uno strumento di attacco che modifica le richieste API.</p>
+</li>
+<li>
+<p>Permettere la visualizzazione o la modifica dell'account di qualcun altro, fornendo
+  il suo identificatore unico (insecure direct object references)</p>
+</li>
+<li>
+<p>Accesso all'API con controlli di accesso mancanti per POST, PUT e DELETE.</p>
+</li>
+<li>
+<p>Elevazione dei privilegi. Agire come un utente senza essere loggato o
+  agire come amministratore quando si è svolto il login come utente base.</p>
+</li>
+<li>
+<p>Manipolazione dei metadati, come la riproduzione o la modifica di un JSON
+  Web Token (JWT), o un cookie o un campo nascosto
+  manipolati per elevare i privilegi o abusare dell'invalidazione del JWT.</p>
+</li>
+<li>
+<p>La configurazione errata di CORS permette l'accesso all'API da origini non autorizzate/non fidate.</p>
+</li>
+<li>
+<p>Forzare la navigazione verso pagine autenticate come utente non autenticato o
+  a pagine privilegiate come utente base.</p>
+</li>
+</ul>
+<h2 id="come-prevenirla">Come prevenirla<a class="headerlink" href="#come-prevenirla" title="Permanent link">⚓︎</a></h2>
+<p>Il controllo degli accessi è efficace solo nel codice lato server o
+API server-less, dove l'attaccante non può modificare i meccanismi di controllo dell'accesso
+o i metadati.</p>
+<ul>
+<li>
+<p>Tranne che per le risorse pubbliche, applicare il principio di deny by default.</p>
+</li>
+<li>
+<p>Implementare i meccanismi di controllo dell'accesso una volta sola e riutilizzarli in tutta
+  l'applicazione, incluso limitare l'utilizzo di Cross-Origin Resource Sharing (CORS).</p>
+</li>
+<li>
+<p>I controlli di accesso del Model dovrebbero imporre la proprietà dei record piuttosto che
+  accettare che l'utente possa creare, leggere, aggiornare o cancellare qualsiasi
+  record.</p>
+</li>
+<li>
+<p>I requisiti unici dei vincoli di business di un'applicazione dovrebbero essere applicati nei
+  modelli di dominio.</p>
+</li>
+<li>
+<p>Disabilitare il directory listing del server web e garantire che i metadati dei file (ad es,
+  .git) e i file di backup non siano presenti all'interno delle web roots.</p>
+</li>
+<li>
+<p>Registrare i fallimenti dei meccanismi di controllo dell'accesso, avvisare gli amministratori quando appropriato (ad es,
+  fallimenti ripetuti).</p>
+</li>
+<li>
+<p>Implementare meccanismi di rate limiting per accesso all'API e al controller per minimizzare il danno da
+  strumenti di attacco automatizzati.</p>
+</li>
+<li>
+<p>Gli identificatori di sessione stateful dovrebbero essere invalidati sul server dopo il logout.
+  I token JWT stateless dovrebbero piuttosto essere di breve durata in modo che la finestra di 
+  opportunità per un attaccante sia ridotta al minimo. Per i JWT di lunga durata è altamente raccomandato di
+  seguire gli standard OAuth per revocare l'accesso.</p>
+</li>
+</ul>
+<p>Gli sviluppatori e lo staff di QA dovrebbero includere test funzionali di controllo dell'accesso
+e test di integrazione.</p>
+<h2 id="esempi-di-scenari-dattacco">Esempi di scenari d'attacco<a class="headerlink" href="#esempi-di-scenari-dattacco" title="Permanent link">⚓︎</a></h2>
+<p><strong>Scenario #1:</strong> L'applicazione usa dati non verificati in una chiamata SQL che
+sta accedendo alle informazioni dell'account:</p>
+<div class="highlight"><pre><span></span><code> pstmt.setString(1, request.getParameter(&quot;acct&quot;));
+ ResultSet results = pstmt.executeQuery( );
+</code></pre></div>
+<p>Un attaccante modifica semplicemente il parametro 'acct' del browser per inviare
+numero di conto a piacere. Se il parametro non è verificato correttamente, l'attaccante può accedere all'account di qualsiasi utente.</p>
+<div class="highlight"><pre><span></span><code> https://example.com/app/accountInfo?acct=notmyacct
+</code></pre></div>
+<p><strong>Scenario #2:</strong> Un attaccante forza semplicemente la navigazione verso gli URL di destinazione. Sono richiesti i diritti di amministratore per accedere alla pagina di amministrazione.</p>
+<p><div class="highlight"><pre><span></span><code> https://example.com/app/getappInfo
+ https://example.com/app/admin_getappInfo
+</code></pre></div>
+Se un utente non autenticato può accedere a una delle due pagine, è una falla. Se un non amministratore può accedere alla pagina dell'amministratore, questa è una falla.</p>
+<h2 id="riferimenti">Riferimenti<a class="headerlink" href="#riferimenti" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>
+<p><a href="https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls">OWASP Proactive Controls: Enforce Access
+    Controls</a></p>
+</li>
+<li>
+<p><a href="https://owasp.org/www-project-application-security-verification-standard">OWASP Application Security Verification Standard: V4 Access
+    Control</a></p>
+</li>
+<li>
+<p><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/README">OWASP Testing Guide: Authorization
+    Testing</a></p>
+</li>
+<li>
+<p><a href="https://cheatsheetseries.owasp.org/cheatsheets/Access_Control_Cheat_Sheet.html">OWASP Cheat Sheet: Access Control</a></p>
+</li>
+<li>
+<p><a href="https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html">OWASP Cheat Sheet: Authorization</a></p>
+</li>
+<li>
+<p><a href="https://portswigger.net/blog/exploiting-cors-misconfigurations-for-bitcoins-and-bounties">PortSwigger: Exploiting CORS
+    misconfiguration</a></p>
+</li>
+<li>
+<p><a href="https://www.oauth.com/oauth2-servers/listing-authorizations/revoking-access/">OAuth: Revoking Access</a></p>
+</li>
+</ul>
+<h2 id="lista-dei-cwes-correlati">Lista dei CWEs correlati<a class="headerlink" href="#lista-dei-cwes-correlati" title="Permanent link">⚓︎</a></h2>
+<p><a href="https://cwe.mitre.org/data/definitions/22.html">CWE-22 Improper Limitation of a Pathname to a Restricted Directory
+('Path Traversal')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/23.html">CWE-23 Relative Path Traversal</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/35.html">CWE-35 Path Traversal: '.../...//'</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/59.html">CWE-59 Improper Link Resolution Before File Access ('Link Following')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200 Exposure of Sensitive Information to an Unauthorized Actor</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/201.html">CWE-201 Exposure of Sensitive Information Through Sent Data</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/219.html">CWE-219 Storage of File with Sensitive Data Under Web Root</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/264.html">CWE-264 Permissions, Privileges, and Access Controls (should no longer be used)</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/275.html">CWE-275 Permission Issues</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/276.html">CWE-276 Incorrect Default Permissions</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/284.html">CWE-284 Improper Access Control</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/285.html">CWE-285 Improper Authorization</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/352.html">CWE-352 Cross-Site Request Forgery (CSRF)</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/359.html">CWE-359 Exposure of Private Personal Information to an Unauthorized Actor</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/377.html">CWE-377 Insecure Temporary File</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/402.html">CWE-402 Transmission of Private Resources into a New Sphere ('Resource Leak')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/425.html">CWE-425 Direct Request ('Forced Browsing')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/441.html">CWE-441 Unintended Proxy or Intermediary ('Confused Deputy')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497 Exposure of Sensitive System Information to an Unauthorized Control Sphere</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/538.html">CWE-538 Insertion of Sensitive Information into Externally-Accessible File or Directory</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/540.html">CWE-540 Inclusion of Sensitive Information in Source Code</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/548.html">CWE-548 Exposure of Information Through Directory Listing</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/552.html">CWE-552 Files or Directories Accessible to External Parties</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/566.html">CWE-566 Authorization Bypass Through User-Controlled SQL Primary Key</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/601.html">CWE-601 URL Redirection to Untrusted Site ('Open Redirect')</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/639.html">CWE-639 Authorization Bypass Through User-Controlled Key</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/651.html">CWE-651 Exposure of WSDL File Containing Sensitive Information</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/668.html">CWE-668 Exposure of Resource to Wrong Sphere</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/706.html">CWE-706 Use of Incorrectly-Resolved Name or Reference</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/862.html">CWE-862 Missing Authorization</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/863.html">CWE-863 Incorrect Authorization</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/913.html">CWE-913 Improper Control of Dynamically-Managed Code Resources</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/922.html">CWE-922 Insecure Storage of Sensitive Information</a></p>
+<p><a href="https://cwe.mitre.org/data/definitions/1275.html">CWE-1275 Sensitive Cookie with Improper SameSite Attribute</a></p>
                 
                   
                     
@@ -691,7 +965,7 @@
 <div class="md-source-date">
   <small>
     
-      Ultimo aggiornamento: 2021-10-05
+      Ultimo aggiornamento: 2021-10-11
     
   </small>
 </div>
@@ -820,7 +1094,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copia", "clipboard.copied": "Copiato", "search.config.lang": "it", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Cerca", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.e99e714c.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c7d1b464.min.js"></script>
+      <script src="../../assets/javascripts/bundle.bc35569b.min.js"></script>
       
     
   </body>

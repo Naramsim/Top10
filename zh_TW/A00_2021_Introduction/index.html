@@ -12,7 +12,7 @@
       
       
       <link rel="icon" href="../../assets/OWASP-logo.svg">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.1">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.2">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1c75ef36.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.24c991ad.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -160,44 +160,44 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../" hreflang="en" class="md-select__link">
+                  <a href="../../A00_2021_Introduction/" hreflang="en" class="md-select__link">
                     English
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../it/" hreflang="it" class="md-select__link">
+                  <a href="../../it/A00_2021_Introduction/" hreflang="it" class="md-select__link">
                     Italiano
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                  <a href="../../pt_BR/A00_2021_Introduction/" hreflang="pt_BR" class="md-select__link">
                     Português (Brasil)
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../" hreflang="zh_TW" class="md-select__link">
+                  <a href="../../ar/A00_2021_Introduction/" hreflang="ar" class="md-select__link">
+                    العربية
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="./" hreflang="zh_TW" class="md-select__link">
                     繁體中文
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../ja/" hreflang="ja" class="md-select__link">
+                  <a href="../../ja/A00_2021_Introduction/" hreflang="ja" class="md-select__link">
                     日本語
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../fr/" hreflang="fr" class="md-select__link">
+                  <a href="../../fr/A00_2021_Introduction/" hreflang="fr" class="md-select__link">
                     Français
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../../ar/" hreflang="ar" class="md-select__link">
-                    العربية
                   </a>
                 </li>
                 
@@ -856,7 +856,7 @@
 <p>在 2017 年，我們用事件發生次數去判斷可能發生的機率去選擇類別，然後透過一群在業界擁有數十年經驗的專家團對討論並依照 <em>可發生性</em>，<em>可發現性（同可能性）</em>，和 <em>技術影響力</em> 去做排名。在 2021 年，我們希望如果可以的話用資料證明可發生性和技術影響性。</p>
 <p>我們下載了 OWASP Depndency Check 並取出了 CVSS 漏洞，並將相關的 CWE 用影響力分數分群。這花了一些時間和力氣去研究因為所有的 CVEs 都有 CVSSv2 分數，但是在其中因為 CVSSv2 跟 CVSSv3 之間有一些缺失是必須被修正的。經過了一段時間後，所有的 CVEs 都會有對應的 CVSSv3 的分數。再者，分數的範圍和計算的公式在 CVSSv2 和 CVSSv3 之間也做了更新。</p>
 <p>在 CVSSv2 中，漏洞和影響力兩者都可達到 10.0 分，但是公式本身會將兩者調整為漏洞佔 60%，然後影響力佔 40%。在 CVSSv3 中，理論上的最高值將漏洞限制在 6.0 分而影響力在 4.0 分。當考慮到權重比率時，影響力的分數會偏高，在 CVSSv3 中幾乎平均會多出 1.5 分，而漏洞分數卻會平均少 0.5 分。</p>
-<p>從 OWASP Dependcy Check 翠取出的 NVD 資料當中有將近 12.5 萬筆 CVE 資料有對應到 CWE，而有 241 筆獨特的 CWEs 有對應到 CVE。6.2萬筆 CWE 有對應到 CVSSv3 分數，所以大約是整體資料中一半的部分。</p>
+<p>從 OWASP Dependcy Check 萃取出的 NVD 資料當中有將近 12.5 萬筆 CVE 資料有對應到 CWE，而有 241 筆獨特的 CWEs 有對應到 CVE。6.2萬筆 CWE 有對應到 CVSSv3 分數，所以大約是整體資料中一半的部分。</p>
 <p>而在 Top Ten，我們計算漏洞和影響力的平均分數的方式如下。我們將所有有 CVSS 分數的 CVE 依照 CWE 分組，然後依照有 CVSSv3 的漏洞和影響力在所有資料中的百分比作權重，在加上資料中有 CVSSv2 的資料去做平均。我們將這些平均後的 CWEs 對應到資料中，然後將他的漏洞和引想力分數使用在另一半的風險公式中。</p>
 <h2 id="_4">為什麼就不純粹做統計分析？<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
 <p>這些資料的結果最主要是被限制在能使用自動工具測試出來的結果。可是當你跟一位有經驗的應用程式安全專家聊的時候，他們會跟你說絕大多數他們找到的問題都不在這些資料裡面。原因是一個測試要被自動化的時候，需要花時間去開發這些弱點測試的方法論，當你需要將這個測試自動化並能對大量的應用程式去驗證時，又會花上更多的時間。當我們回頭看去年獲以前有可能沒出現的一些問題的趨勢，我們發現其實都沒有在這些資料當中。</p>
@@ -915,7 +915,7 @@ We get data from organizations that are testing vendors by trade, bug bounty ven
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-10-05
+      Last update: 2021-10-11
     
   </small>
 </div>
@@ -1044,7 +1044,7 @@ We get data from organizations that are testing vendors by trade, bug bounty ven
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.e99e714c.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c7d1b464.min.js"></script>
+      <script src="../../assets/javascripts/bundle.bc35569b.min.js"></script>
       
     
   </body>
