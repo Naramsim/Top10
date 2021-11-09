@@ -12,7 +12,7 @@
       
       
       <link rel="icon" href="../assets/OWASP-logo.svg">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.2">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.24c991ad.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -166,14 +166,8 @@
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../it/" hreflang="it" class="md-select__link">
-                    Italiano
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="../pt_BR/" hreflang="pt_BR" class="md-select__link">
-                    Português (Brasil)
+                  <a href="../ja/" hreflang="ja" class="md-select__link">
+                    日本語
                   </a>
                 </li>
                 
@@ -184,20 +178,26 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../it/" hreflang="it" class="md-select__link">
+                    Italiano
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../zh_TW/" hreflang="zh_TW" class="md-select__link">
                     繁體中文
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../ja/" hreflang="ja" class="md-select__link">
-                    日本語
+                  <a href="../fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../fr/" hreflang="fr" class="md-select__link">
-                    Français
+                  <a href="../pt_BR/" hreflang="pt_BR" class="md-select__link">
+                    Português (Brasil)
                   </a>
                 </li>
                 
@@ -335,6 +335,8 @@
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -711,6 +713,8 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -836,7 +840,7 @@
 <li><strong><a href="A07_2021-Identification_and_Authentication_Failures/">A07:2021-Identification and Authentication Failures</a></strong> was previously Broken Authentication and is sliding down from the second position, and now includes CWEs that are more related to identification failures. This category is still an integral part of the Top 10, but the increased availability of standardized frameworks seems to be helping.</li>
 <li><strong><a href="A08_2021-Software_and_Data_Integrity_Failures/">A08:2021-Software and Data Integrity Failures</a></strong> is a new category for 2021, focusing on making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity. One of the highest weighted impacts from Common Vulnerability and Exposures/Common Vulnerability Scoring System (<abbr title="Common Vulnerabilities and Exposures">CVE</abbr>/<abbr title="Common Vulnerability Scoring System">CVSS</abbr>) data mapped to the 10 CWEs in this category. <strong>A8:2017-Insecure Deserialization</strong> is now a part of this larger category.</li>
 <li><strong><a href="A09_2021-Security_Logging_and_Monitoring_Failures/">A09:2021-Security Logging and Monitoring Failures</a></strong> was previously <strong>A10:2017-Insufficient Logging &amp; Monitoring</strong> and is added from the Top 10 community survey (#3), moving up from #10 previously. This category is expanded to include more types of failures, is challenging to test for, and isn't well represented in the <abbr title="Common Vulnerabilities and Exposures">CVE</abbr>/<abbr title="Common Vulnerability Scoring System">CVSS</abbr> data. However, failures in this category can directly impact visibility, incident alerting, and forensics.</li>
-<li><strong><a href="A10_2021-Server-Side_Request_Forgery.md">A10:2021-Server-Side Request Forgery</a></strong> is added from the Top 10 community survey (#1). The data shows a relatively low incidence rate with above average testing coverage, along with above-average ratings for Exploit and Impact potential. This category represents the scenario where the security community members are telling us this is important, even though it's not illustrated in the data at this time.</li>
+<li><strong><a href="A10_2021-Server-Side_Request_Forgery_%28SSRF%29/">A10:2021-Server-Side Request Forgery</a></strong> is added from the Top 10 community survey (#1). The data shows a relatively low incidence rate with above average testing coverage, along with above-average ratings for Exploit and Impact potential. This category represents the scenario where the security community members are telling us this is important, even though it's not illustrated in the data at this time.</li>
 </ul>
 <h2 id="methodology">Methodology<a class="headerlink" href="#methodology" title="Permanent link">⚓︎</a></h2>
 <p>This installment of the Top 10 is more data-driven than ever but not blindly data-driven. We selected eight of the ten categories from contributed data and two categories from the Top 10 community survey at a high level. We do this for a fundamental reason, looking at the contributed data is looking into the past. AppSec researchers take time to find new vulnerabilities and new ways to test for them. It takes time to integrate these tests into tools and processes. By the time we can reliably test a weakness at scale, years have likely passed. To balance that view, we use an community survey to ask application security and development experts on the front lines what they see as essential weaknesses that the data may not show yet.</p>
@@ -933,7 +937,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-10-11
+      Last update: 2021-11-09
     
   </small>
 </div>
@@ -1044,10 +1048,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.e99e714c.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.bc35569b.min.js"></script>
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>
