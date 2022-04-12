@@ -1,98 +1,453 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>.</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>0x00-notice/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/0x00-notice/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/0x00-notice/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/0x00-notice/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/0x00-notice/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/0x00-notice/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/0x00-notice/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/0x00-notice/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/0x00-notice/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/0x00-notice/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>0x00-notice.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/0x00-notice.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/0x00-notice.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/0x00-notice.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/0x00-notice.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/0x00-notice.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/0x00-notice.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/0x00-notice.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/0x00-notice.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/0x00-notice.pt_BR/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A00-about-owasp/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A00-about-owasp/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A00-about-owasp/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A00-about-owasp/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A00-about-owasp/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A00-about-owasp/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A00-about-owasp/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A00-about-owasp/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A00-about-owasp/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A00-about-owasp/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A00-about-owasp.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A00-about-owasp.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A00-about-owasp.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A00-about-owasp.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A00-about-owasp.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A00-about-owasp.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A00-about-owasp.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A00-about-owasp.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A00-about-owasp.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A00-about-owasp.pt_BR/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A00_2021-How_to_start_an_AppSec_program_with_the_OWASP_Top_10.pt_BR/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A00_2021_How_to_use_the_OWASP_Top_10_as_a_standard.pt_BR/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A00_2021_Introduction/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A00_2021_Introduction/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A00_2021_Introduction/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A00_2021_Introduction/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A00_2021_Introduction/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A00_2021_Introduction/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A00_2021_Introduction/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A00_2021_Introduction/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A00_2021_Introduction/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A00_2021_Introduction/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A01_2021-Broken_Access_Control/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A01_2021-Broken_Access_Control/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A01_2021-Broken_Access_Control/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A01_2021-Broken_Access_Control/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A01_2021-Broken_Access_Control/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A01_2021-Broken_Access_Control/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A01_2021-Broken_Access_Control/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A01_2021-Broken_Access_Control/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A01_2021-Broken_Access_Control/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A01_2021-Broken_Access_Control/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A01_2021-Broken_Access_Control.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A01_2021-Broken_Access_Control.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A01_2021-Broken_Access_Control.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A01_2021-Broken_Access_Control.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A01_2021-Broken_Access_Control.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A01_2021-Broken_Access_Control.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A01_2021-Broken_Access_Control.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A01_2021-Broken_Access_Control.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A01_2021-Broken_Access_Control.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A01_2021-Broken_Access_Control.pt_BR/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A02_2021-Cryptographic_Failures/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A02_2021-Cryptographic_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A02_2021-Cryptographic_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A02_2021-Cryptographic_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A02_2021-Cryptographic_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A02_2021-Cryptographic_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A02_2021-Cryptographic_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A02_2021-Cryptographic_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A02_2021-Cryptographic_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A02_2021-Cryptographic_Failures/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A02_2021-Cryptographic_Failures.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A02_2021-Cryptographic_Failures.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A02_2021-Cryptographic_Failures.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A02_2021-Cryptographic_Failures.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A02_2021-Cryptographic_Failures.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A02_2021-Cryptographic_Failures.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A02_2021-Cryptographic_Failures.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A02_2021-Cryptographic_Failures.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A02_2021-Cryptographic_Failures.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A02_2021-Cryptographic_Failures.pt_BR/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A03_2021-Injection/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A03_2021-Injection/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A03_2021-Injection/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A03_2021-Injection/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A03_2021-Injection/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A03_2021-Injection/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A03_2021-Injection/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A03_2021-Injection/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A03_2021-Injection/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A03_2021-Injection/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A03_2021-Injection.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A03_2021-Injection.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A03_2021-Injection.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A03_2021-Injection.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A03_2021-Injection.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A03_2021-Injection.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A03_2021-Injection.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A03_2021-Injection.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A03_2021-Injection.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A03_2021-Injection.pt_BR/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A04_2021-Insecure_Design/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A04_2021-Insecure_Design/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A04_2021-Insecure_Design/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A04_2021-Insecure_Design/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A04_2021-Insecure_Design/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A04_2021-Insecure_Design/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A04_2021-Insecure_Design/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A04_2021-Insecure_Design/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A04_2021-Insecure_Design/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A04_2021-Insecure_Design/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A04_2021-Insecure_Design.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A04_2021-Insecure_Design.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A04_2021-Insecure_Design.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A04_2021-Insecure_Design.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A04_2021-Insecure_Design.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A04_2021-Insecure_Design.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A04_2021-Insecure_Design.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A04_2021-Insecure_Design.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A04_2021-Insecure_Design.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A04_2021-Insecure_Design.pt_BR/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-11-19</lastmod>
+         <loc>A05_2021-Security_Misconfiguration/</loc>
+         <lastmod>2022-04-12</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A05_2021-Security_Misconfiguration/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A05_2021-Security_Misconfiguration/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A05_2021-Security_Misconfiguration/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A05_2021-Security_Misconfiguration/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A05_2021-Security_Misconfiguration/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A05_2021-Security_Misconfiguration/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A05_2021-Security_Misconfiguration/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A05_2021-Security_Misconfiguration/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A05_2021-Security_Misconfiguration/"/>
+         
+    </url>
+    <url>
+         <loc>A05_2021-Security_Misconfiguration.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A05_2021-Security_Misconfiguration.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A05_2021-Security_Misconfiguration.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A05_2021-Security_Misconfiguration.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A05_2021-Security_Misconfiguration.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A05_2021-Security_Misconfiguration.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A05_2021-Security_Misconfiguration.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A05_2021-Security_Misconfiguration.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A05_2021-Security_Misconfiguration.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A05_2021-Security_Misconfiguration.pt_BR/"/>
+         
+    </url>
+    <url>
+         <loc>A06_2021-Vulnerable_and_Outdated_Components/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A06_2021-Vulnerable_and_Outdated_Components/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A06_2021-Vulnerable_and_Outdated_Components/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A06_2021-Vulnerable_and_Outdated_Components/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A06_2021-Vulnerable_and_Outdated_Components/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A06_2021-Vulnerable_and_Outdated_Components/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A06_2021-Vulnerable_and_Outdated_Components/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A06_2021-Vulnerable_and_Outdated_Components/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A06_2021-Vulnerable_and_Outdated_Components/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A06_2021-Vulnerable_and_Outdated_Components/"/>
+         
+    </url>
+    <url>
+         <loc>A06_2021-Vulnerable_and_Outdated_Components.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A06_2021-Vulnerable_and_Outdated_Components.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A06_2021-Vulnerable_and_Outdated_Components.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A06_2021-Vulnerable_and_Outdated_Components.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A06_2021-Vulnerable_and_Outdated_Components.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A06_2021-Vulnerable_and_Outdated_Components.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A06_2021-Vulnerable_and_Outdated_Components.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A06_2021-Vulnerable_and_Outdated_Components.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A06_2021-Vulnerable_and_Outdated_Components.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A06_2021-Vulnerable_and_Outdated_Components.pt_BR/"/>
+         
+    </url>
+    <url>
+         <loc>A07_2021-Identification_and_Authentication_Failures/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A07_2021-Identification_and_Authentication_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A07_2021-Identification_and_Authentication_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A07_2021-Identification_and_Authentication_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A07_2021-Identification_and_Authentication_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A07_2021-Identification_and_Authentication_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A07_2021-Identification_and_Authentication_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A07_2021-Identification_and_Authentication_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A07_2021-Identification_and_Authentication_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A07_2021-Identification_and_Authentication_Failures/"/>
+         
+    </url>
+    <url>
+         <loc>A08_2021-Software_and_Data_Integrity_Failures/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A08_2021-Software_and_Data_Integrity_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A08_2021-Software_and_Data_Integrity_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A08_2021-Software_and_Data_Integrity_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A08_2021-Software_and_Data_Integrity_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A08_2021-Software_and_Data_Integrity_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A08_2021-Software_and_Data_Integrity_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A08_2021-Software_and_Data_Integrity_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A08_2021-Software_and_Data_Integrity_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A08_2021-Software_and_Data_Integrity_Failures/"/>
+         
+    </url>
+    <url>
+         <loc>A09_2021-Security_Logging_and_Monitoring_Failures/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A09_2021-Security_Logging_and_Monitoring_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A09_2021-Security_Logging_and_Monitoring_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A09_2021-Security_Logging_and_Monitoring_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A09_2021-Security_Logging_and_Monitoring_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A09_2021-Security_Logging_and_Monitoring_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A09_2021-Security_Logging_and_Monitoring_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A09_2021-Security_Logging_and_Monitoring_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A09_2021-Security_Logging_and_Monitoring_Failures/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A09_2021-Security_Logging_and_Monitoring_Failures/"/>
+         
+    </url>
+    <url>
+         <loc>A10_2021-Server-Side_Request_Forgery_%28SSRF%29/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"/>
+         
+    </url>
+    <url>
+         <loc>A10_2021-Server-Side_Request_Forgery_%28SSRF%29.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A10_2021-Server-Side_Request_Forgery_%28SSRF%29.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A10_2021-Server-Side_Request_Forgery_%28SSRF%29.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A10_2021-Server-Side_Request_Forgery_%28SSRF%29.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A10_2021-Server-Side_Request_Forgery_%28SSRF%29.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A10_2021-Server-Side_Request_Forgery_%28SSRF%29.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A10_2021-Server-Side_Request_Forgery_%28SSRF%29.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A10_2021-Server-Side_Request_Forgery_%28SSRF%29.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A10_2021-Server-Side_Request_Forgery_%28SSRF%29.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A10_2021-Server-Side_Request_Forgery_%28SSRF%29.pt_BR/"/>
+         
+    </url>
+    <url>
+         <loc>A11_2021-Next_Steps/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/A11_2021-Next_Steps/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/A11_2021-Next_Steps/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/A11_2021-Next_Steps/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/A11_2021-Next_Steps/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/A11_2021-Next_Steps/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/A11_2021-Next_Steps/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/A11_2021-Next_Steps/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/A11_2021-Next_Steps/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/A11_2021-Next_Steps/"/>
+         
+    </url>
+    <url>
+         <loc>index.pt_BR/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/index.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/index.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/index.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/index.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/index.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/index.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/index.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/index.pt_BR/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/index.pt_BR/"/>
+         
+    </url>
+    <url>
+         <loc>ar/assets/readme/</loc>
+         <lastmod>2022-04-12</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/ar/assets/readme/"/>
+         <xhtml:link rel="alternate" hreflang="ar" href="ar/ar/assets/readme/"/>
+         <xhtml:link rel="alternate" hreflang="es" href="es/ar/assets/readme/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="fr/ar/assets/readme/"/>
+         <xhtml:link rel="alternate" hreflang="id" href="id/ar/assets/readme/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="it/ar/assets/readme/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/ar/assets/readme/"/>
+         <xhtml:link rel="alternate" hreflang="zh_CN" href="zh_CN/ar/assets/readme/"/>
+         <xhtml:link rel="alternate" hreflang="zh_TW" href="zh_TW/ar/assets/readme/"/>
+         
     </url>
 </urlset>
