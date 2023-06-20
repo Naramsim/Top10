@@ -175,6 +175,12 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/A07_2021-Identification_and_Authentication_Failures/" hreflang="pt_BR" class="md-select__link">
+                    pt_BR - Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../zh_CN/A07_2021-Identification_and_Authentication_Failures/" hreflang="zh_CN" class="md-select__link">
                     zh_CN - 简体中文
                   </a>
@@ -754,28 +760,28 @@
 <table>
 <thead>
 <tr>
-<th align="center">CWEs associées</th>
-<th align="center">Taux d'incidence max</th>
-<th align="center">Taux d'incidence moyen</th>
-<th align="center">Exploitation pondérée moyenne</th>
-<th align="center">Impact pondéré moyen</th>
-<th align="center">Couverture max</th>
-<th align="center">Couverture moyenne</th>
-<th align="center">Nombre total d'occurrences</th>
-<th align="center">Nombre total de CVEs</th>
+<th style="text-align: center;">CWEs associées</th>
+<th style="text-align: center;">Taux d'incidence max</th>
+<th style="text-align: center;">Taux d'incidence moyen</th>
+<th style="text-align: center;">Exploitation pondérée moyenne</th>
+<th style="text-align: center;">Impact pondéré moyen</th>
+<th style="text-align: center;">Couverture max</th>
+<th style="text-align: center;">Couverture moyenne</th>
+<th style="text-align: center;">Nombre total d'occurrences</th>
+<th style="text-align: center;">Nombre total de CVEs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">22</td>
-<td align="center">14,84 %</td>
-<td align="center">2,55 %</td>
-<td align="center">7,40</td>
-<td align="center">6,50</td>
-<td align="center">79,51 %</td>
-<td align="center">45,72 %</td>
-<td align="center">132,195</td>
-<td align="center">3 897</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">14,84 %</td>
+<td style="text-align: center;">2,55 %</td>
+<td style="text-align: center;">7,40</td>
+<td style="text-align: center;">6,50</td>
+<td style="text-align: center;">79,51 %</td>
+<td style="text-align: center;">45,72 %</td>
+<td style="text-align: center;">132,195</td>
+<td style="text-align: center;">3 897</td>
 </tr>
 </tbody>
 </table>
@@ -788,15 +794,15 @@
 <li>permet la force brute ou d'autres attaques automatisées ;</li>
 <li>autorise les mots de passe par défaut, faibles ou bien connus, tels que "Password1" ou "admin / admin" ;</li>
 <li>utilise des processus de récupération des informations d'identification faibles ou inefficaces et des processus de mot de passe oublié, tels que «&nbsp;Questions secrètes&nbsp;», qui ne peuvent être sécurisées ;</li>
-<li>utilise des mots de passe en texte brut, chiffrés ou faiblement hachés (voir <strong>A02:2021 – Défaillances cryptographiques</strong>) ;</li>
-<li>absence ou utilisation inefficace de l’authentification multi-facteur ;</li>
+<li>utilise des mots de passe en texte brut, chiffrés ou faiblement hachés (voir <a href="../A02_2021-Cryptographic_Failures/">A02:2021 – Défaillances cryptographiques</a>) ;</li>
+<li>absence ou utilisation inefficace de l’authentification multifacteur ;</li>
 <li>exposition des identifiants de session dans l'URL ;</li>
 <li>réutilisation de l'identifiant de session après une connexion réussie ;</li>
 <li>n'invalide pas correctement les identifiants de session. Les sessions utilisateurs ou les jetons d'authentification (en particulier les jetons SSO) ne sont pas correctement invalidés lors de la déconnexion ou après une période d'inactivité.</li>
 </ul>
 <h2 id="comment-sen-premunir">Comment s'en prémunir<a class="headerlink" href="#comment-sen-premunir" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>lorsque cela est possible, implémentez l'authentification multi-facteur pour éviter les attaques automatisées, le bourrage des informations d'identification, la force brute et la réutilisation des informations d'identification volées ;</li>
+<li>lorsque cela est possible, implémentez l'authentification multifacteur pour éviter les attaques automatisées, le bourrage des informations d'identification, la force brute et la réutilisation des informations d'identification volées ;</li>
 <li>ne pas livrer ou déployer avec des informations d'identification par défaut, en particulier pour les utilisateurs avec privilèges ;</li>
 <li>intégrer des tests de mots de passes faibles, à la création ou au changement. Comparer ce mot de passe avec la liste des 10000 mots de passe les plus faibles ;</li>
 <li>respecter la longueur, la complexité et la rotation des mots de passe par rapport aux directives du <em>National Institute of Standards and Technology</em> (NIST) 800-63 B à la section 5.1.1 ou autres directives modernes ;</li>
@@ -806,7 +812,7 @@
 </ul>
 <h2 id="exemple-de-scenarios-dattaque">Exemple de scénarios d'attaque<a class="headerlink" href="#exemple-de-scenarios-dattaque" title="Permanent link">⚓︎</a></h2>
 <p><strong>Scénario 1</strong> : La réutilisation de mots de passe, l’utilisation de mots de passe connus, est une attaque classique. Supposons une application qui n’implémente pas une protection automatisée contre le bourrage d'informations ou l'utilisation des mots de passe connus. Dans ce cas, l'application peut être utilisée comme un oracle pour déterminer si les mots de passe sont valides.</p>
-<p><strong>Scénario 2</strong> : La plupart des attaques d’authentification se produisent en raison de l’utilisation de mots de passe comme facteur unique. Une fois considérées, les exigences de rotation et de complexité des mots de passe, sont considérées comme encourageant les utilisateurs à utiliser et réutiliser des mots de passe faibles. Il est maintenant recommandé d’arrêter ces pratiques selon les directives NIST 800-63 et d’utiliser du multi-facteur.</p>
+<p><strong>Scénario 2</strong> : La plupart des attaques d’authentification se produisent en raison de l’utilisation de mots de passe comme facteur unique. Un temps considérées comme de bonnes pratiques, les exigences de rotation et de complexité des mots de passe sont considérées comme encourageant les utilisateurs à utiliser et réutiliser des mots de passe faibles. Il est maintenant recommandé d’arrêter ces pratiques selon les directives NIST 800-63 et d’utiliser du multifacteur.</p>
 <p><strong>Scénario 3</strong> : Les timeouts de session d’application ne sont pas paramétrés correctement. Un utilisateur utilise un ordinateur public pour accéder à une application. À la place de se déconnecter correctement, l’utilisateur ferme le navigateur et quitte l’ordinateur. Un attaquant utilise ensuite le même navigateur quelque temps après et l’utilisateur est toujours authentifié.</p>
 <h2 id="references">Références<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
 <ul>
@@ -876,7 +882,7 @@
   <small>
     
       Dernière mise à jour:
-      2022-04-19
+      2023-06-20
     
   </small>
 </div>

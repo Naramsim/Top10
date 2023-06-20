@@ -175,6 +175,12 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/A02_2021-Cryptographic_Failures/" hreflang="pt_BR" class="md-select__link">
+                    pt_BR - Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../zh_CN/A02_2021-Cryptographic_Failures/" hreflang="zh_CN" class="md-select__link">
                     zh_CN - 简体中文
                   </a>
@@ -754,28 +760,28 @@
 <table>
 <thead>
 <tr>
-<th align="center">CWEs associées</th>
-<th align="center">Taux d'incidence max</th>
-<th align="center">Taux d'incidence moyen</th>
-<th align="center">Exploitation pondérée moyenne</th>
-<th align="center">Impact pondéré moyen</th>
-<th align="center">Couverture max</th>
-<th align="center">Couverture moyenne</th>
-<th align="center">Nombre total d'occurrences</th>
-<th align="center">Nombre total de CVEs</th>
+<th style="text-align: center;">CWEs associées</th>
+<th style="text-align: center;">Taux d'incidence max</th>
+<th style="text-align: center;">Taux d'incidence moyen</th>
+<th style="text-align: center;">Exploitation pondérée moyenne</th>
+<th style="text-align: center;">Impact pondéré moyen</th>
+<th style="text-align: center;">Couverture max</th>
+<th style="text-align: center;">Couverture moyenne</th>
+<th style="text-align: center;">Nombre total d'occurrences</th>
+<th style="text-align: center;">Nombre total de CVEs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">29</td>
-<td align="center">46,44 %</td>
-<td align="center">4,49 %</td>
-<td align="center">7,29</td>
-<td align="center">6,81</td>
-<td align="center">79,33 %</td>
-<td align="center">34,85 %</td>
-<td align="center">233 788</td>
-<td align="center">3 075</td>
+<td style="text-align: center;">29</td>
+<td style="text-align: center;">46,44 %</td>
+<td style="text-align: center;">4,49 %</td>
+<td style="text-align: center;">7,29</td>
+<td style="text-align: center;">6,81</td>
+<td style="text-align: center;">79,33 %</td>
+<td style="text-align: center;">34,85 %</td>
+<td style="text-align: center;">233 788</td>
+<td style="text-align: center;">3 075</td>
 </tr>
 </tbody>
 </table>
@@ -811,9 +817,9 @@
 <li>Stocker les mots de passe en utilisant des fonctions de hachage avec salage et facteur de travail (facteur de délai), telles que Argon2, scrypt, bcrypt ou PBKDF2.</li>
 <li>Les vecteurs d'initialisation doivent être choisis de façon appropriée au mode d'opération. Pour la plupart des modes, cela signifie utiliser un générateur de nombres pseudo-aléatoires cryptographiquement sécurisé (CSPRNG en anglais). Pour les modes requérant un nonce, alors le vecteur d'initialisation (VI) ne nécessite pas un CSPRNG. Dans tous les cas, un vecteur d'initialisation ne devrait pas être utilisé deux fois pour une clé fixe.</li>
 <li>Utiliser toujours un chiffrement authentifié plutôt qu'un chiffrement simple</li>
-<li>Les clés devraient toujours être générée de façon cryptographiquement aléatoire et stockées en mémoire sous la forme de tableau d'octets. Si un mot de passe est utilisée, alors il faut obligatoirement le transformer en clé via une fonction de dérivation de clé appropriée.</li>
+<li>Les clés devraient toujours être générées de façon cryptographiquement aléatoire et stockées en mémoire sous la forme de tableau d'octets. Si un mot de passe est utilisée, alors il faut obligatoirement le transformer en clé via une fonction de dérivation de clé appropriée.</li>
 <li>S'assurer qu'une génération cryptographiquement aléatoire est utilisée là où c'est approprié, et qu'elle n'a pas une graine aléatoire prévisible ou avec une faible entropie. La plupart des APIs modernes ne demandent pas au développeur de fournir une graine au CSPRNG pour être sécurisé.</li>
-<li>Ne pas utiliser de fonctions cryptographiques et de méthodes de remplissage dépréciées telles que MD5, SHA1, PCKS 1 v1.5.</li>
+<li>Ne pas utiliser de fonctions cryptographiques et de méthodes de remplissage dépréciées telles que MD5, SHA1, PKCS 1 v1.5.</li>
 <li>Vérifier indépendamment l'efficacité de la configuration et des paramètres.</li>
 </ul>
 <h2 id="exemple-de-scenarios-dattaque">Exemple de scénarios d'attaque<a class="headerlink" href="#exemple-de-scenarios-dattaque" title="Permanent link">⚓︎</a></h2>
@@ -885,7 +891,7 @@
   <small>
     
       Dernière mise à jour:
-      2022-04-19
+      2023-06-20
     
   </small>
 </div>

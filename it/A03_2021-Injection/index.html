@@ -175,6 +175,12 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/A03_2021-Injection/" hreflang="pt_BR" class="md-select__link">
+                    pt_BR - Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../zh_CN/A03_2021-Injection/" hreflang="zh_CN" class="md-select__link">
                     zh_CN - 简体中文
                   </a>
@@ -754,28 +760,28 @@
 <table>
 <thead>
 <tr>
-<th align="center">CWEs corrispondenti</th>
-<th align="center">Tasso di incidenza Max</th>
-<th align="center">Tasso di incidenza Medio</th>
-<th align="center">Sfruttabilità pesata</th>
-<th align="center">Impatto Medio</th>
-<th align="center">Copertura Max</th>
-<th align="center">Copertura media</th>
-<th align="center">Occorrenze Totali</th>
-<th align="center">CVE Totali</th>
+<th style="text-align: center;">CWEs corrispondenti</th>
+<th style="text-align: center;">Tasso di incidenza Max</th>
+<th style="text-align: center;">Tasso di incidenza Medio</th>
+<th style="text-align: center;">Sfruttabilità pesata</th>
+<th style="text-align: center;">Impatto Medio</th>
+<th style="text-align: center;">Copertura Max</th>
+<th style="text-align: center;">Copertura media</th>
+<th style="text-align: center;">Occorrenze Totali</th>
+<th style="text-align: center;">CVE Totali</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">33</td>
-<td align="center">19.09%</td>
-<td align="center">3.37%</td>
-<td align="center">7.25</td>
-<td align="center">7.15</td>
-<td align="center">94.04%</td>
-<td align="center">47.90%</td>
-<td align="center">274,228</td>
-<td align="center">32,078</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">19.09%</td>
+<td style="text-align: center;">3.37%</td>
+<td style="text-align: center;">7.25</td>
+<td style="text-align: center;">7.15</td>
+<td style="text-align: center;">94.04%</td>
+<td style="text-align: center;">47.90%</td>
+<td style="text-align: center;">274,228</td>
+<td style="text-align: center;">32,078</td>
 </tr>
 </tbody>
 </table>
@@ -849,8 +855,8 @@ Language (HQL)):
 <div class="highlight"><pre><span></span><code> Query HQLQuery = session.createQuery(&quot;FROM accounts WHERE custID=&#39;&quot; + request.getParameter(&quot;id&quot;) + &quot;&#39;&quot;);
 </code></pre></div></p>
 <p>In entrambi i casi, l'attaccante modifica il valore del parametro 'id' nel suo
-browser per inviare: ' or '1'='1. Per esempio:
-<div class="highlight"><pre><span></span><code> http://example.com/app/accountView?id=&#39; or &#39;1&#39;=&#39;1
+browser per inviare: ' UNION SELECT SLEEP(10);--. Per esempio:
+<div class="highlight"><pre><span></span><code> http://example.com/app/accountView?id=&#39; UNION SELECT SLEEP(10);--
 </code></pre></div></p>
 <p>Questo cambia il significato di entrambe le query per restituire tutti i record dalla
 della tabella degli account. Attacchi più pericolosi potrebbero modificare o cancellare i dati
@@ -932,7 +938,7 @@ Downstream Component ('Injection')</a></p>
   <small>
     
       Ultimo aggiornamento:
-      2022-04-19
+      2023-06-20
     
   </small>
 </div>

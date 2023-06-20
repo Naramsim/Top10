@@ -175,6 +175,12 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/" hreflang="pt_BR" class="md-select__link">
+                    pt_BR - Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../zh_CN/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/" hreflang="zh_CN" class="md-select__link">
                     zh_CN - 简体中文
                   </a>
@@ -808,28 +814,28 @@
 <table>
 <thead>
 <tr>
-<th align="center">CWEs Mapped</th>
-<th align="center">Max Incidence Rate</th>
-<th align="center">Avg Incidence Rate</th>
-<th align="center">Avg Weighted Exploit</th>
-<th align="center">Avg Weighted Impact</th>
-<th align="center">Max Coverage</th>
-<th align="center">Avg Coverage</th>
-<th align="center">Total Occurrences</th>
-<th align="center">Total CVEs</th>
+<th style="text-align: center;">CWEs Mapped</th>
+<th style="text-align: center;">Max Incidence Rate</th>
+<th style="text-align: center;">Avg Incidence Rate</th>
+<th style="text-align: center;">Avg Weighted Exploit</th>
+<th style="text-align: center;">Avg Weighted Impact</th>
+<th style="text-align: center;">Max Coverage</th>
+<th style="text-align: center;">Avg Coverage</th>
+<th style="text-align: center;">Total Occurrences</th>
+<th style="text-align: center;">Total CVEs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">1</td>
-<td align="center">2.72%</td>
-<td align="center">2.72%</td>
-<td align="center">8.28</td>
-<td align="center">6.72</td>
-<td align="center">67.72%</td>
-<td align="center">67.72%</td>
-<td align="center">9,503</td>
-<td align="center">385</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2.72%</td>
+<td style="text-align: center;">2.72%</td>
+<td style="text-align: center;">8.28</td>
+<td style="text-align: center;">6.72</td>
+<td style="text-align: center;">67.72%</td>
+<td style="text-align: center;">67.72%</td>
+<td style="text-align: center;">9,503</td>
+<td style="text-align: center;">385</td>
 </tr>
 </tbody>
 </table>
@@ -912,7 +918,7 @@ ports are open or closed on internal servers from connection results or
 elapsed time to connect or reject SSRF payload connections.</p>
 <p><strong>Scenario #2:</strong> Sensitive data exposure – Attackers can access local 
 files or internal services to gain sensitive information such
-as <code>file:///etc/passwd&lt;/span&gt;</code> and <code>http://localhost:28017/</code>.</p>
+as <code>file:///etc/passwd</code> and <code>http://localhost:28017/</code>.</p>
 <p><strong>Scenario #3:</strong> Access metadata storage of cloud services – Most cloud
 providers have metadata storage such as <code>http://169.254.169.254/</code>. An
 attacker can read the metadata to gain sensitive information.</p>
@@ -950,7 +956,7 @@ Execution (RCE) or Denial of Service (DoS).</p>
   <small>
     
       Last update:
-      2022-04-19
+      2023-06-20
     
   </small>
 </div>

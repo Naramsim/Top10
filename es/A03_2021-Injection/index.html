@@ -175,6 +175,12 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/A03_2021-Injection/" hreflang="pt_BR" class="md-select__link">
+                    pt_BR - Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../zh_CN/A03_2021-Injection/" hreflang="zh_CN" class="md-select__link">
                     zh_CN - 简体中文
                   </a>
@@ -754,28 +760,28 @@
 <table>
 <thead>
 <tr>
-<th align="center">CWEs mapeadas</th>
-<th align="center">Tasa de incidencia máx</th>
-<th align="center">Tasa de incidencia prom</th>
-<th align="center">Explotabilidad ponderada prom</th>
-<th align="center">Impacto ponderado prom</th>
-<th align="center">Cobertura máx</th>
-<th align="center">Cobertura prom</th>
-<th align="center">Incidencias totales</th>
-<th align="center">Total CVEs</th>
+<th style="text-align: center;">CWEs mapeadas</th>
+<th style="text-align: center;">Tasa de incidencia máx</th>
+<th style="text-align: center;">Tasa de incidencia prom</th>
+<th style="text-align: center;">Explotabilidad ponderada prom</th>
+<th style="text-align: center;">Impacto ponderado prom</th>
+<th style="text-align: center;">Cobertura máx</th>
+<th style="text-align: center;">Cobertura prom</th>
+<th style="text-align: center;">Incidencias totales</th>
+<th style="text-align: center;">Total CVEs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">33</td>
-<td align="center">19.09%</td>
-<td align="center">3.37%</td>
-<td align="center">7.25</td>
-<td align="center">7.15</td>
-<td align="center">94.04%</td>
-<td align="center">47.90%</td>
-<td align="center">274,228</td>
-<td align="center">32,078</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">19.09%</td>
+<td style="text-align: center;">3.37%</td>
+<td style="text-align: center;">7.25</td>
+<td style="text-align: center;">7.15</td>
+<td style="text-align: center;">94.04%</td>
+<td style="text-align: center;">47.90%</td>
+<td style="text-align: center;">274,228</td>
+<td style="text-align: center;">32,078</td>
 </tr>
 </tbody>
 </table>
@@ -825,8 +831,8 @@ puede resultar en consultas que siguen siendo vulnerables a inyecciones, (por ej
 Language (HQL)):
 <div class="highlight"><pre><span></span><code> Query HQLQuery = session.createQuery(&quot;FROM accounts WHERE custID=&#39;&quot; + request.getParameter(&quot;id&quot;) + &quot;&#39;&quot;);
 </code></pre></div></p>
-<p>En ambos casos, el atacante modifica el valor del parámetro "id" en su navegador y enviar por ejemplo: ‘ or ‘1’=’1.
-<div class="highlight"><pre><span></span><code> http://example.com/app/accountView?id=&#39; or &#39;1&#39;=&#39;1
+<p>En ambos casos, el atacante modifica el valor del parámetro "id" en su navegador y enviar por ejemplo: ' UNION SLEEP(10);--.
+<div class="highlight"><pre><span></span><code> http://example.com/app/accountView?id=&#39; UNION SELECT SLEEP(10);--
 </code></pre></div></p>
 <p>Esto modifica el significado de ambas consultas, retornando todos los registros de la tabla “accounts. Ataques más peligrosos podrían modificar datos o incluso invocar procedimientos almacenados.</p>
 <h2 id="referencias">Referencias<a class="headerlink" href="#referencias" title="Permanent link">⚓︎</a></h2>
@@ -906,7 +912,7 @@ Downstream Component ('Injection')</a></p>
   <small>
     
       Última actualización:
-      2022-04-19
+      2023-06-20
     
   </small>
 </div>

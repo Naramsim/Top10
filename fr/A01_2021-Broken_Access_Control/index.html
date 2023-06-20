@@ -175,6 +175,12 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/A01_2021-Broken_Access_Control/" hreflang="pt_BR" class="md-select__link">
+                    pt_BR - Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../zh_CN/A01_2021-Broken_Access_Control/" hreflang="zh_CN" class="md-select__link">
                     zh_CN - 简体中文
                   </a>
@@ -754,33 +760,33 @@
 <table>
 <thead>
 <tr>
-<th align="center">CWEs associées</th>
-<th align="center">Taux d'incidence max</th>
-<th align="center">Taux d'incidence moyen</th>
-<th align="center">Exploitation pondérée moyenne</th>
-<th align="center">Impact pondéré moyen</th>
-<th align="center">Couverture max</th>
-<th align="center">Couverture moyenne</th>
-<th align="center">Nombre total d'occurrences</th>
-<th align="center">Nombre total de CVEs</th>
+<th style="text-align: center;">CWEs associées</th>
+<th style="text-align: center;">Taux d'incidence max</th>
+<th style="text-align: center;">Taux d'incidence moyen</th>
+<th style="text-align: center;">Exploitation pondérée moyenne</th>
+<th style="text-align: center;">Impact pondéré moyen</th>
+<th style="text-align: center;">Couverture max</th>
+<th style="text-align: center;">Couverture moyenne</th>
+<th style="text-align: center;">Nombre total d'occurrences</th>
+<th style="text-align: center;">Nombre total de CVEs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">34</td>
-<td align="center">55,97 %</td>
-<td align="center">3,81 %</td>
-<td align="center">6,92</td>
-<td align="center">5,93</td>
-<td align="center">94,55 %</td>
-<td align="center">47,72 %</td>
-<td align="center">318 487</td>
-<td align="center">19 013</td>
+<td style="text-align: center;">34</td>
+<td style="text-align: center;">55,97 %</td>
+<td style="text-align: center;">3,81 %</td>
+<td style="text-align: center;">6,92</td>
+<td style="text-align: center;">5,93</td>
+<td style="text-align: center;">94,55 %</td>
+<td style="text-align: center;">47,72 %</td>
+<td style="text-align: center;">318 487</td>
+<td style="text-align: center;">19 013</td>
 </tr>
 </tbody>
 </table>
 <h2 id="apercu">Aperçu<a class="headerlink" href="#apercu" title="Permanent link">⚓︎</a></h2>
-<p>Précédemment à la cinquième place, 94 % des applications ont été testées pour une forme de contrôle d'accès défaillant avec un taux d'incidence moyen de 3,81 %. Cette catégorie a le plus d'occurrences dans l'ensemble de données contribué avec plus de 318&nbsp;000. Les <em>Common Weakness Enumerations</em> (CWE) notables incluses sont <em>CWE-200: Exposure of Sensitive Information to an Unauthorized Actor</em>, <em>CWE-201: Exposure of Sensitive Information Through Sent Data</em> et <em>CWE-352: Cross-Site Request Forgery</em> .</p>
+<p>Précédemment à la cinquième place, 94 % des applications ont été testées pour une forme de contrôle d'accès défaillant avec un taux d'incidence moyen de 3,81 %. Cette catégorie a le plus d'occurrences dans l'ensemble de données contribué avec plus de 318&nbsp;000. Les <em>Common Weakness Enumerations</em> (CWE) notables incluses sont <em>CWE-200: Exposure of Sensitive Information to an Unauthorized Actor</em>, <em>CWE-201: Insertion of Sensitive Information Into Sent Data</em> et <em>CWE-352: Cross-Site Request Forgery</em> .</p>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h2>
 <p>Le contrôle d'accès applique une stratégie telle que les utilisateurs ne peuvent pas agir en dehors de leurs autorisations prévues. Les défaillances entraînent généralement la divulgation, la modification ou la destruction d'informations non autorisées de toutes les données ou l'exécution d'une fonctionnalité métier en dehors des limites de l'utilisateur. Les vulnérabilités courantes du contrôle d'accès incluent :</p>
 <ul>
@@ -803,7 +809,7 @@
 <li>Désactiver le listing de dossier sur le serveur web, et vérifier que les fichiers de métadonnées (ex : .git) et de sauvegardes ne se trouvent pas dans l'arborescence web.</li>
 <li>Tracer les échecs de contrôles d'accès, alerter les administrateurs quand c'est approprié (ex : échecs répétés).</li>
 <li>Limiter la fréquence d'accès aux API et aux contrôleurs d'accès, afin de minimiser les dégâts que causeraient des outils d'attaques automatisés.</li>
-<li>Les identifiants de session avec état doivent être invalidés côté serveur après une déconnexion. Les JWT, sans état, doivent être à durée de vie relativement courte pour que la fenêtre d'opportunité d'un attaquant est minimisée. Pour les JWT avec une durée de vie plus longue, il est fortement recommandé de suivre le standard OAuth de révocation d'accès.</li>
+<li>Les identifiants de session avec état doivent être invalidés côté serveur après une déconnexion. Les JWT, sans état, doivent être à durée de vie relativement courte pour que la fenêtre d'opportunité d'un attaquant soit minimisée. Pour les JWT avec une durée de vie plus longue, il est fortement recommandé de suivre le standard OAuth de révocation d'accès.</li>
 </ul>
 <p>Les développeurs et les testeurs qualité doivent procéder à des tests unitaires et d'intégration sur les fonctionnalités de contrôle d'accès.</p>
 <h2 id="exemple-de-scenarios-dattaque">Exemple de scénarios d'attaque<a class="headerlink" href="#exemple-de-scenarios-dattaque" title="Permanent link">⚓︎</a></h2>
@@ -886,7 +892,7 @@ Si un utilisateur non-authentifié peut accéder à l'une des pages, c'est une f
   <small>
     
       Dernière mise à jour:
-      2022-04-19
+      2023-06-20
     
   </small>
 </div>

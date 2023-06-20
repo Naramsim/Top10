@@ -175,6 +175,12 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/A03_2021-Injection/" hreflang="pt_BR" class="md-select__link">
+                    pt_BR - Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="./" hreflang="zh_CN" class="md-select__link">
                     zh_CN - 简体中文
                   </a>
@@ -754,28 +760,28 @@
 <table>
 <thead>
 <tr>
-<th align="center">可对照 CWEs 数量</th>
-<th align="center">最大发生率</th>
-<th align="center">平均发生率</th>
-<th align="center">最大覆盖范围</th>
-<th align="center">平均覆盖范围</th>
-<th align="center">平均加权弱点</th>
-<th align="center">平均加权影点</th>
-<th align="center">出现次数</th>
-<th align="center">所有有关 CVEs 数量</th>
+<th style="text-align: center;">可对照 CWEs 数量</th>
+<th style="text-align: center;">最大发生率</th>
+<th style="text-align: center;">平均发生率</th>
+<th style="text-align: center;">最大覆盖范围</th>
+<th style="text-align: center;">平均覆盖范围</th>
+<th style="text-align: center;">平均加权弱点</th>
+<th style="text-align: center;">平均加权影点</th>
+<th style="text-align: center;">出现次数</th>
+<th style="text-align: center;">所有有关 CVEs 数量</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">33</td>
-<td align="center">19.09%</td>
-<td align="center">3.37%</td>
-<td align="center">94.04%</td>
-<td align="center">47.90%</td>
-<td align="center">7.25</td>
-<td align="center">7.15</td>
-<td align="center">274,228</td>
-<td align="center">32,078</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">19.09%</td>
+<td style="text-align: center;">3.37%</td>
+<td style="text-align: center;">94.04%</td>
+<td style="text-align: center;">47.90%</td>
+<td style="text-align: center;">7.25</td>
+<td style="text-align: center;">7.15</td>
+<td style="text-align: center;">274,228</td>
+<td style="text-align: center;">32,078</td>
 </tr>
 </tbody>
 </table>
@@ -832,7 +838,7 @@ request.getParameter("id") + "'";</p>
 request.getParameter("id") + "'");</p>
 </blockquote>
 <p>在这两个情境中，攻击者在他们的浏览器修改了 "id" 参数值，送出 ‘ or ‘1’=’1，例如：</p>
-<p>http://example.com/app/accountView?id=' or '1'='1</p>
+<p>http://example.com/app/accountView?id=' UNION SELECT SLEEP(10);--</p>
 <p>这两个查询的含义将产生改变，而回应所有帐户资料表中的纪录，更危险的攻击将可能修改或删除资料，以及影点资料的储存过程。</p>
 <h2 id="_6">參考<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h2>
 <ul>
@@ -934,7 +940,7 @@ Expression Language Statement ('Expression Language Injection')</p>
   <small>
     
       Last update:
-      2022-04-19
+      2023-06-20
     
   </small>
 </div>

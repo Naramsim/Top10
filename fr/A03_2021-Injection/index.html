@@ -175,6 +175,12 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/A03_2021-Injection/" hreflang="pt_BR" class="md-select__link">
+                    pt_BR - Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../zh_CN/A03_2021-Injection/" hreflang="zh_CN" class="md-select__link">
                     zh_CN - 简体中文
                   </a>
@@ -754,28 +760,28 @@
 <table>
 <thead>
 <tr>
-<th align="center">CWEs associées</th>
-<th align="center">Taux d'incidence max</th>
-<th align="center">Taux d'incidence moyen</th>
-<th align="center">Exploitation pondérée moyenne</th>
-<th align="center">Impact pondéré moyen</th>
-<th align="center">Couverture max</th>
-<th align="center">Couverture moyenne</th>
-<th align="center">Nombre total d'occurrences</th>
-<th align="center">Nombre total de CVEs</th>
+<th style="text-align: center;">CWEs associées</th>
+<th style="text-align: center;">Taux d'incidence max</th>
+<th style="text-align: center;">Taux d'incidence moyen</th>
+<th style="text-align: center;">Exploitation pondérée moyenne</th>
+<th style="text-align: center;">Impact pondéré moyen</th>
+<th style="text-align: center;">Couverture max</th>
+<th style="text-align: center;">Couverture moyenne</th>
+<th style="text-align: center;">Nombre total d'occurrences</th>
+<th style="text-align: center;">Nombre total de CVEs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">33</td>
-<td align="center">19,09 %</td>
-<td align="center">3,37 %</td>
-<td align="center">7,25</td>
-<td align="center">7,15</td>
-<td align="center">94,04 %</td>
-<td align="center">47,90 %</td>
-<td align="center">274 228</td>
-<td align="center">32 078</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">19,09 %</td>
+<td style="text-align: center;">3,37 %</td>
+<td style="text-align: center;">7,25</td>
+<td style="text-align: center;">7,15</td>
+<td style="text-align: center;">94,04 %</td>
+<td style="text-align: center;">47,90 %</td>
+<td style="text-align: center;">274 228</td>
+<td style="text-align: center;">32 078</td>
 </tr>
 </tbody>
 </table>
@@ -787,7 +793,7 @@
 <li>les données venant de l'utilisateur ne sont pas validées, filtrées ou nettoyées par l'application&nbsp;;</li>
 <li>des requêtes dynamiques ou des appels non paramétrés sans échappement par rapport au contexte sont envoyés à l'interpréteur&nbsp;;</li>
 <li>des données hostiles sont utilisées au sein de paramètres de recherche de mapping objet - relationnel (ORM) pour extraire des données supplémentaires sensibles&nbsp;;</li>
-<li>des données hostiles sont utilisées directement ou concaténées, par exemple lors de la construction de requête dynamiques, de commandes ou de procédures stockées pour des requêtes SQL ou des commandes OS.</li>
+<li>des données hostiles sont utilisées directement ou concaténées, par exemple lors de la construction de requêtes dynamiques, de commandes ou de procédures stockées pour des requêtes SQL ou des commandes OS.</li>
 </ul>
 <p>Les injections les plus courantes se font dans le SQL, le NoSQL, les commandes OS, le mapping objet - relationnel, le LDAP, l'Expression Language et le Object Graph Navigation Library (OGNL). La façon de faire est la même pour tous les interpréteurs. La revue de code source est la meilleure manière de détecter si une application est vulnérable à l'injection. Le test automatique de toutes les données d'entrée via les paramètres, en-têtes, URL, cookies, JSON, SOAP et XML est fortement encouragé. Les organisations peuvent tirer profit de la puissance des outils d'analyse statique de code (SAST) ou d'analyse dynamique de l'application (DAST) en les intégrant dans leur chaine d'intégration continue (CI / CD) pour identifier avant déploiement en production les vulnérabilités liées aux injections.</p>
 <h2 id="comment-sen-premunir">Comment s'en prémunir<a class="headerlink" href="#comment-sen-premunir" title="Permanent link">⚓︎</a></h2>
@@ -805,8 +811,8 @@
 <p><strong>Scenario #2</strong> : De même, la confiance aveugle d'une application dans les frameworks qu'elle utilise peut faire que ses requêtes sont toujours vulnérables (par exemple Hibernate Query Language (HQL)) :
 <div class="highlight"><pre><span></span><code> Query HQLQuery = session.createQuery(&quot;FROM accounts WHERE custID=&#39;&quot; + request.getParameter(&quot;id&quot;) + &quot;&#39;&quot;);
 </code></pre></div></p>
-<p>Dans les deux cas, l'attaquant modifie le paramètre ‘id’ dans son navigateur en : ' or '1'='1. Par exemple :
-<div class="highlight"><pre><span></span><code> http://example.com/app/accountView?id=&#39; or &#39;1&#39;=&#39;1
+<p>Dans les deux cas, l'attaquant modifie le paramètre ‘id’ dans son navigateur en : ' UNION SELECT SLEEP(10);--. Par exemple :
+<div class="highlight"><pre><span></span><code> http://example.com/app/accountView?id=&#39; UNION SELECT SLEEP(10);--
 </code></pre></div></p>
 <p>Ceci change le sens de chacune des requêtes pour récupérer tous les enregistrements de la table des comptes. Dans le pire des cas, l’attaquant exploite cette faiblesse pour modifier ou détruire des données, ou appeler des procédures stockées de la base de données.</p>
 <h2 id="references">Références<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
@@ -886,7 +892,7 @@ Downstream Component ('Injection')</a></p>
   <small>
     
       Dernière mise à jour:
-      2022-04-19
+      2023-06-20
     
   </small>
 </div>

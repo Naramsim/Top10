@@ -175,6 +175,12 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/A03_2021-Injection/" hreflang="pt_BR" class="md-select__link">
+                    pt_BR - Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../zh_CN/A03_2021-Injection/" hreflang="zh_CN" class="md-select__link">
                     zh_CN - 简体中文
                   </a>
@@ -754,28 +760,28 @@
 <table>
 <thead>
 <tr>
-<th align="center">CWEs Mapped</th>
-<th align="center">Max Incidence Rate</th>
-<th align="center">Avg Incidence Rate</th>
-<th align="center">Avg Weighted Exploit</th>
-<th align="center">Avg Weighted Impact</th>
-<th align="center">Max Coverage</th>
-<th align="center">Avg Coverage</th>
-<th align="center">Total Occurrences</th>
-<th align="center">Total CVEs</th>
+<th style="text-align: center;">CWEs Mapped</th>
+<th style="text-align: center;">Max Incidence Rate</th>
+<th style="text-align: center;">Avg Incidence Rate</th>
+<th style="text-align: center;">Avg Weighted Exploit</th>
+<th style="text-align: center;">Avg Weighted Impact</th>
+<th style="text-align: center;">Max Coverage</th>
+<th style="text-align: center;">Avg Coverage</th>
+<th style="text-align: center;">Total Occurrences</th>
+<th style="text-align: center;">Total CVEs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">33</td>
-<td align="center">19.09%</td>
-<td align="center">3.37%</td>
-<td align="center">7.25</td>
-<td align="center">7.15</td>
-<td align="center">94.04%</td>
-<td align="center">47.90%</td>
-<td align="center">274,228</td>
-<td align="center">32,078</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">19.09%</td>
+<td style="text-align: center;">3.37%</td>
+<td style="text-align: center;">7.25</td>
+<td style="text-align: center;">7.15</td>
+<td style="text-align: center;">94.04%</td>
+<td style="text-align: center;">47.90%</td>
+<td style="text-align: center;">274,228</td>
+<td style="text-align: center;">32,078</td>
 </tr>
 </tbody>
 </table>
@@ -854,8 +860,8 @@ Language (HQL)):
 <div class="highlight"><pre><span></span><code> Query HQLQuery = session.createQuery(&quot;FROM accounts WHERE custID=&#39;&quot; + request.getParameter(&quot;id&quot;) + &quot;&#39;&quot;);
 </code></pre></div></p>
 <p>In both cases, the attacker modifies the ‘id’ parameter value in their
-browser to send: ‘ or ‘1’=’1. For example:
-<div class="highlight"><pre><span></span><code> http://example.com/app/accountView?id=&#39; or &#39;1&#39;=&#39;1
+browser to send: ' UNION SLEEP(10);--. For example:
+<div class="highlight"><pre><span></span><code> http://example.com/app/accountView?id=&#39; UNION SELECT SLEEP(10);--
 </code></pre></div></p>
 <p>This changes the meaning of both queries to return all the records from
 the accounts table. More dangerous attacks could modify or delete data
@@ -937,7 +943,7 @@ Downstream Component ('Injection')</a></p>
   <small>
     
       Last update:
-      2022-04-19
+      2023-06-20
     
   </small>
 </div>

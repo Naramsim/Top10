@@ -175,6 +175,12 @@
                 </li>
                 
                 <li class="md-select__item">
+                  <a href="../../pt_BR/A08_2021-Software_and_Data_Integrity_Failures/" hreflang="pt_BR" class="md-select__link">
+                    pt_BR - Português (Brasil)
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
                   <a href="../../zh_CN/A08_2021-Software_and_Data_Integrity_Failures/" hreflang="zh_CN" class="md-select__link">
                     zh_CN - 简体中文
                   </a>
@@ -754,35 +760,35 @@
 <table>
 <thead>
 <tr>
-<th align="center">対応する CWE 数</th>
-<th align="center">最大発生率</th>
-<th align="center">平均発生率</th>
-<th align="center">加重平均（攻撃の難易度）</th>
-<th align="center">加重平均（攻撃による影響）</th>
-<th align="center">最大網羅率</th>
-<th align="center">平均網羅率</th>
-<th align="center">総発生数</th>
-<th align="center">CVE 合計件数</th>
+<th style="text-align: center;">対応する CWE 数</th>
+<th style="text-align: center;">最大発生率</th>
+<th style="text-align: center;">平均発生率</th>
+<th style="text-align: center;">加重平均（攻撃の難易度）</th>
+<th style="text-align: center;">加重平均（攻撃による影響）</th>
+<th style="text-align: center;">最大網羅率</th>
+<th style="text-align: center;">平均網羅率</th>
+<th style="text-align: center;">総発生数</th>
+<th style="text-align: center;">CVE 合計件数</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">10</td>
-<td align="center">16.67%</td>
-<td align="center">2.05%</td>
-<td align="center">6.94</td>
-<td align="center">7.94</td>
-<td align="center">75.04%</td>
-<td align="center">45.35%</td>
-<td align="center">47,972</td>
-<td align="center">1,152</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">16.67%</td>
+<td style="text-align: center;">2.05%</td>
+<td style="text-align: center;">6.94</td>
+<td style="text-align: center;">7.94</td>
+<td style="text-align: center;">75.04%</td>
+<td style="text-align: center;">45.35%</td>
+<td style="text-align: center;">47,972</td>
+<td style="text-align: center;">1,152</td>
 </tr>
 </tbody>
 </table>
 <h2 id="_2">概要<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <p>これは2021年に新設されたカテゴリーで、ソフトウェアの更新、重要なデータを、CI/CDパイプラインにおいて整合性を検証せずに見込みで進めることによる問題にフォーカスしています。
 共通脆弱性識別子/共通脆弱性評価システム (CVE/CVSS) のデータから最も重大な影響を受けたものの1つです。
-注目すべき共通脆弱性識別子 (CWEs) は、<em>CWE-829: 信頼できない制御領域からの機能の組み込み</em>、<em>CWE-494: ダウンロードしたコードの完全性検証不備</em>、そして<em>CWE-502: 信頼できないデータのデシリアライゼーション</em>です。</p>
+注目すべき共通脆弱性タイプ一覧 (CWE) は、<em>CWE-829: 信頼できない制御領域からの機能の組み込み</em>、<em>CWE-494: ダウンロードしたコードの完全性検証不備</em>、そして<em>CWE-502: 信頼できないデータのデシリアライゼーション</em>です。</p>
 <h2 id="_3">説明<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <p>ソフトウェアとデータの整合性の不具合は、コードやインフラストラクチャが整合性違反から保護されていないことに関連しています。
 例として、アプリケーションが信頼されていないソースに由来するプラグインやライブラリ、モジュール、コンテンツデリバリーネットワーク (CDNs) に依存している場合が挙げられます。
@@ -819,7 +825,7 @@
 そのソフトウェアを開発した企業は、安全なビルドとアップデートの整合プロセスを備えていました。
 しかし、それらは破壊することが可能であったために、その企業は、数ヶ月にわたって、高度に標的化された悪意のあるアップデートを18,000を超える組織に配信し、そのうち100ほどの組織が影響を受けました。
 この一件は、この類の侵害としては、歴史上最も広範囲に影響が広がり、また最も重大であったものの一つです。</p>
-<p><strong>シナリオ #3 安全でないでシリアライゼーション:</strong> Reactアプリケーションが、一連のSpring Bootマイクロサービスを呼び出します。
+<p><strong>シナリオ #3 安全でないデシリアライゼーション:</strong> Reactアプリケーションが、一連のSpring Bootマイクロサービスを呼び出します。
 関数型言語のプログラマーは、イミュータブルなコードを書こうとします。
 そこで、プログラマーは、呼び出しの前後でシリアライズしたユーザーの状態を渡す、と言う解決策を思いつきます。
 攻撃者は (base64でエンコードされていることを示す) "rO0" というJavaオブジェクトのシグネチャに気づき、Java Serial Killerツールを使用してアプリケーションサーバ上でリモートコードを実行します。</p>
@@ -868,28 +874,28 @@
 <table>
 <thead>
 <tr>
-<th align="center">CWEs Mapped</th>
-<th align="center">Max Incidence Rate</th>
-<th align="center">Avg Incidence Rate</th>
-<th align="center">Avg Weighted Exploit</th>
-<th align="center">Avg Weighted Impact</th>
-<th align="center">Max Coverage</th>
-<th align="center">Avg Coverage</th>
-<th align="center">Total Occurrences</th>
-<th align="center">Total CVEs</th>
+<th style="text-align: center;">CWEs Mapped</th>
+<th style="text-align: center;">Max Incidence Rate</th>
+<th style="text-align: center;">Avg Incidence Rate</th>
+<th style="text-align: center;">Avg Weighted Exploit</th>
+<th style="text-align: center;">Avg Weighted Impact</th>
+<th style="text-align: center;">Max Coverage</th>
+<th style="text-align: center;">Avg Coverage</th>
+<th style="text-align: center;">Total Occurrences</th>
+<th style="text-align: center;">Total CVEs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">10</td>
-<td align="center">16.67%</td>
-<td align="center">2.05%</td>
-<td align="center">6.94</td>
-<td align="center">7.94</td>
-<td align="center">75.04%</td>
-<td align="center">45.35%</td>
-<td align="center">47,972</td>
-<td align="center">1,152</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">16.67%</td>
+<td style="text-align: center;">2.05%</td>
+<td style="text-align: center;">6.94</td>
+<td style="text-align: center;">7.94</td>
+<td style="text-align: center;">75.04%</td>
+<td style="text-align: center;">45.35%</td>
+<td style="text-align: center;">47,972</td>
+<td style="text-align: center;">1,152</td>
 </tr>
 </tbody>
 </table>
@@ -1010,7 +1016,7 @@ application server.</p>
   <small>
     
       最終更新日:
-      2022-04-19
+      2023-06-20
     
   </small>
 </div>
